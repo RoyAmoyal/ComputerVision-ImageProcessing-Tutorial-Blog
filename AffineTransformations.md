@@ -5,7 +5,6 @@
   
  <figure>
     <img src='lions1.jpeg' alt='missing' width=500 height=300 />
-   
     <figcaption> יובל יאריה </figcaption>
 </figure>
   
