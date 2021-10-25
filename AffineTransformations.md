@@ -1,4 +1,7 @@
-# Roy's Computer Vision Library Blog
+---
+title:  "Roy's Computer Vision Library Blog"
+---
+
 <div dir="rtl">
    <h1> Affine Transformations </h1>
   <h2> Image Rotation </h2>
