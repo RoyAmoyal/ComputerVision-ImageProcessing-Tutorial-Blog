@@ -1,6 +1,5 @@
 <div dir="rtl">
-Image Rotation #
-
+  <h1> Image Rotation </h1>
 Interpolation ##
   <div dir="rtl">
 
