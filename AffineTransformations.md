@@ -1,7 +1,7 @@
 ---
 title:  "Roy's Computer Vision Library Blog"
 ---
-
+<style> h1 {text-align: center;} </style>
 <div dir="rtl">
    <h1> style="text-align:center" Affine Transformations </h1>
   <h2> Image Rotation </h2>
