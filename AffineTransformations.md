@@ -20,7 +20,7 @@ title:  "Roy's Computer Vision Library Blog"
    כשמבצעים רוטציה לתמונה מבצעים את הרוטציה בזווית a שבדרך מתקבלת כפרמטר מהמשתמש. <br>
    לדגומה בתמונה הבאה, אנחנו מבצעים רוטציה בזווית a מהפיקסל (u,v) אל הפיקסל (x,y).
    
-   <img src='https://user-images.githubusercontent.com/69425073/138815394-abd74c44-6e61-4942-a842-86e06a214842.png' alt='missing' style="width: 70%; height: auto; />
+   <img src='https://user-images.githubusercontent.com/69425073/138815394-abd74c44-6e61-4942-a842-86e06a214842.png' alt='missing' style="width: 70%; height: auto;" />
 
 
    
