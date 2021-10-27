@@ -32,7 +32,7 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
    
 <div dir="ltr"> 
-   <code class="codeblock">
+   <pre>
       
   void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
@@ -58,7 +58,7 @@ title:  "Roy's Computer Vision Library Blog"
         }
     }
 }
-      </code> </div>
+      </pre> </div>
    
    
    
