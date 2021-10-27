@@ -39,9 +39,9 @@ title:  "Roy's Computer Vision Library Blog"
 #include "opencv2/opencv.hpp"
 {% endhighlight %}
 </div><br>
-
-<b> לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: <b>
-
+<b>
+לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: 
+<b>
 <div dir="ltr"> 
 <br>
 {% highlight cpp%}
