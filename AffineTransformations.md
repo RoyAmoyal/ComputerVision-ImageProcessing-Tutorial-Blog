@@ -16,7 +16,7 @@ title:  "Roy's Computer Vision Library Blog"
   <h3> תאוריה </h3>
    כשמבצעים רוטציה לתמונה מבצעים את הרוטציה בזווית &alpha; שבדרך מתקבלת כפרמטר מהמשתמש. <br>
    לדגומה בתמונה הבאה, אנחנו מבצעים רוטציה בזווית &alpha; מהפיקסל (u,v) אל הפיקסל (x,y).   
-ֿ
+
    <img src='https://user-images.githubusercontent.com/69425073/138815394-abd74c44-6e61-4942-a842-86e06a214842.png' alt='missing' style="width: 60%; height: auto;" />
         <br>
    
