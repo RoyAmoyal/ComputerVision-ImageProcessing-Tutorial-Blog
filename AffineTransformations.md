@@ -25,7 +25,7 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
 מטריצת הרוטציה (אם אני לא טועה אותה מלמדים בלינארית 2):
 
- <img src='images/rotationmatrix1.png'/>  
+ <img src='images/rotationmatrix1.png' style="width: 60%; height: auto;"/>  
    
    
    הדרך הנאיבית, נשלח כל פיקסל באמצעות הטרנספורמציה שהדגמנו קודם וכפי שהסברנו, נשים לב שנקבל חורים.
