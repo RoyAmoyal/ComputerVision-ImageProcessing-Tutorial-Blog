@@ -32,6 +32,7 @@ title:  "Roy's Computer Vision Library Blog"
 
 ראשית נייבא את הספריות הדרושות לנו. 
 <div dir="ltr">
+
 {% highlight c++%}
 #include <iostream>
 #include <cmath>
@@ -42,6 +43,7 @@ title:  "Roy's Computer Vision Library Blog"
 לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: 
 
 <div dir="ltr"> 
+<br>
 {% highlight cpp%}
 int main() {
     cv::Mat img = cv::imread("../lion.jpeg");
