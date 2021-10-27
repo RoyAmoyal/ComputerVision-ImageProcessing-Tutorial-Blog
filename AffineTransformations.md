@@ -30,10 +30,11 @@ title:  "Roy's Computer Vision Library Blog"
    במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה.   <br>
 
 
-ראשית נייבא את הספריות הדרושות לנו. <br>
-
+ראשית נייבא את הספריות הדרושות לנו. 
+ <br>
+  <br>
 <div dir="ltr"> 
-{% highlight cpp%}
+{% highlight c++%}
 #include <iostream>
 #include <cmath>
 #include "opencv2/opencv.hpp"
