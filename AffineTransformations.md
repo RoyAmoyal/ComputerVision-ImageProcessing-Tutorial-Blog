@@ -108,9 +108,9 @@ int main() {
 {% endhighlight %}
 </div><br>
 
-וזו התוצאה שנקבל:
+<b> וזו התוצאה שנקבל:<b>
 <br>
-<img src='images/badlion.png'/> <br>
+<img src='images/badlion.png' style="width: 90%; height: auto;"/> <br>
 
 
 כמו שניתן לראות, אמנם הצלחנו לבצע את הרוטציה אבל אך לא הצלחנו לשמר את איכות התמונה ולמעשה נוצרו חורים בין הפיקסלים.
