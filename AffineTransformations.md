@@ -29,7 +29,8 @@ title:  "Roy's Computer Vision Library Blog"
    
    במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
    
-  <br>
+  <br><br>
+   
    <div dir="ltr"> <code>
       void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
@@ -72,7 +73,6 @@ title:  "Roy's Computer Vision Library Blog"
    
    
    
-        />
    <br>
 לפי טריגונומטריה 
    
