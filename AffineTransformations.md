@@ -1,7 +1,6 @@
 ---
 title:  "Roy's Computer Vision Library Blog"
 ---
-white-space: pre-line;
 
 <div dir="rtl">
    <h1 align=center>Affine Transformations </h1>
