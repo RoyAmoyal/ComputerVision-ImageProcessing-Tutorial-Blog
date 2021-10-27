@@ -32,9 +32,9 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
    
 <div dir="ltr"> 
-   <pre>
       
-  void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
+```json
+   void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
     double rotatedY;
 
@@ -58,7 +58,8 @@ title:  "Roy's Computer Vision Library Blog"
         }
     }
 }
-      </pre> </div>
+   ```
+</div>
    
    
    
