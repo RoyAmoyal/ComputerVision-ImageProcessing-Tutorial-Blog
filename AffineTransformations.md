@@ -27,9 +27,10 @@ title:  "Roy's Computer Vision Library Blog"
    
  <img src='images/rotationmatrix1.png' style="width: 60%; height: auto;"/> <br>
    
-   במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה.  
+   במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
    
-   <code>
+  <br>
+   <div dir="ltr"> <code>
       void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
     double rotatedY;
@@ -54,7 +55,7 @@ title:  "Roy's Computer Vision Library Blog"
         }
     }
 }
-      </code>
+      </code> </div>
    
    
    
