@@ -107,7 +107,8 @@ int main() {
 </div><br>
 
 וזו התוצאה שנקבל:
-<img src='images/badlion.png' style="width: 80%; height: auto;"/> <br>
+<br>
+<img src='images/badlion.png'/> <br>
 
 
 כמו שניתן לראות, אמנם הצלחנו לבצע את הרוטציה אבל אך לא הצלחנו לשמר את איכות התמונה ולמעשה נוצרו חורים בין הפיקסלים.
