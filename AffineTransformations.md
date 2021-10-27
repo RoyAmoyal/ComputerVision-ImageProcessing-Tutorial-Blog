@@ -32,8 +32,9 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
    
 <div dir="ltr"> 
-      
-```json
+   
+<pre>
+  <code class="ruby">
    void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
     double rotatedY;
@@ -58,7 +59,9 @@ title:  "Roy's Computer Vision Library Blog"
         }
     }
 }
-   ```
+</code>
+</pre>
+
 </div>
    
    
