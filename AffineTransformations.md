@@ -23,7 +23,8 @@ title:  "Roy's Computer Vision Library Blog"
    
    כעת עלינו להכיר כמה כלים מתמטיים שישמשו אותנו עבור ביצוע הרוטציה. 
   <br>
-מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2):  <br>
+מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2): 
+ <br>
 
    
  <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> <br>
