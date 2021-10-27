@@ -22,17 +22,60 @@ title:  "Roy's Computer Vision Library Blog"
    
    כעת עלינו להכיר כמה כלים מתמטיים שישמשו אותנו עבור ביצוע הרוטציה. 
   <br>
-מטריצת הרוטציה (אם אני לא טועה אותה היא נלמדת בלינארית 2):
+מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2):  <br>
 
    
- <img src='images/rotationmatrix1.png' style="width: 60%; height: auto;"/> <br>
+ <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> <br>
    
-   במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
-   
-  <br>
-   
+   במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה.   <br>
+
+
+ראשית נייבא את הספריות הדרושות לנו. <br>
+
 <div dir="ltr"> 
-   
+{% highlight cpp%}
+#include <iostream>
+#include <cmath>
+#include "opencv2/opencv.hpp"
+{% endhighlight %}
+</div><br>
+
+לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: <br>
+
+<div dir="ltr"> 
+{% highlight cpp%}
+int main() {
+    cv::Mat img = cv::imread("../lion.jpeg");
+    image_channels img_chan = RGB;
+    //if(img.channels() < 3)
+      //  img_chan = GRAYSCALE;
+
+    cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
+    cv::Mat rotatedImage2(img.rows,img.cols,CV_8UC3);
+
+    // Rotating
+    RotationFunction(img,rotatedImage2,30,INTERPOLATION_NEAREST_NEIGHBOR,img_chan);
+    // End of Rotating
+    // Show the images
+
+    NaiveRotation(img,rotatedImage,30);
+
+    cv::imshow("window1",img);
+    cv::imshow("window2",rotatedImage);
+    cv::imshow("window3",rotatedImage2);
+    cv::imwrite("myfile.jpeg",rotatedImage);
+    cv::waitKey(0);
+    // End of Show the images
+
+    return 0;
+}
+
+{% endhighlight %}
+</div><br>
+
+וכעת נתבונן בפונקציית הרוטציה הנאיבית שלנו:
+
+<div dir="ltr"> 
 {% highlight cpp%}
    void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
