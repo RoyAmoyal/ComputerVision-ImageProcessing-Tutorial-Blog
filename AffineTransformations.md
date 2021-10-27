@@ -32,7 +32,8 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
    
    <div dir="ltr"> <code class="codeblock">
-      void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
+      
+ void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
     double rotatedY;
 
