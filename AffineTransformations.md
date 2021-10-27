@@ -33,7 +33,7 @@ title:  "Roy's Computer Vision Library Blog"
    
 <div dir="ltr"> 
    
-```cpp
+{% highlight %}
    void NaiveRotation(cv::Mat src, cv::Mat dst, int angle) {
     double rotatedX;
     double rotatedY;
@@ -58,7 +58,7 @@ title:  "Roy's Computer Vision Library Blog"
         }
     }
 }
-```
+{% endhighlight %}
 
 </div>
    
