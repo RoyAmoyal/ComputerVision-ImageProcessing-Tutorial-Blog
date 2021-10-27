@@ -31,9 +31,8 @@ title:  "Roy's Computer Vision Library Blog"
 
 
 ראשית נייבא את הספריות הדרושות לנו. 
- <br>
-  <br>
-<div dir="ltr"> 
+<div dir="ltr"><br>
+
 {% highlight c++%}
 #include <iostream>
 #include <cmath>
