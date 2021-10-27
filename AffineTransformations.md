@@ -31,7 +31,7 @@ title:  "Roy's Computer Vision Library Blog"
     
 
 
-<b> ראשית נייבא את הספריות הדרושות לנו: <b>
+<b> ראשית נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
 {% highlight c++%}
 #include <iostream>
@@ -39,9 +39,10 @@ title:  "Roy's Computer Vision Library Blog"
 #include "opencv2/opencv.hpp"
 {% endhighlight %}
 </div><br>
+
 <b>
 לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: 
-<b>
+</b>
 <div dir="ltr"> 
 <br>
 {% highlight cpp%}
