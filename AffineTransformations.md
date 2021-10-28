@@ -31,7 +31,7 @@ title:  "Roy's Computer Vision Library Blog"
  <br>
   <br>
    עבור הזזת פיקסל (x,y):
-
+<br>
   <img src='images/rotationmatrix3.png' style="width: 80%; height: auto;"/> 
   <br>
   <img src='images/rotationmatrix2.png' style="width: 70%; height: auto;"/> 
