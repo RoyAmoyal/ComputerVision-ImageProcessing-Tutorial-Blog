@@ -1,7 +1,7 @@
-# Hello world
-helohelohelo
+---
+title: "Lets Build Together a Computer Vision Library!"
+---
 
-
-[hello page](hello-world.html)
-
-[Affine Transformation](AffineTransformations.md)
+[Biograhpy (Highly Recommended for Interviewers and Employers)](index.md)
+[Blog Agenda](index.md)
+[Lets Begin!](AffineTransformations.md)
