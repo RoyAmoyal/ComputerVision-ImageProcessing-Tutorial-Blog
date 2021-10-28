@@ -25,7 +25,7 @@ title:  "Roy's Computer Vision Library Blog"
   <br>
 מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2): 
  <br>
-
+<br>
    
  <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> <br>
    
