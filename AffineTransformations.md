@@ -24,11 +24,13 @@ title:  "Roy's Computer Vision Library Blog"
    כעת עלינו להכיר כמה כלים מתמטיים שישמשו אותנו עבור ביצוע הרוטציה. 
   <br>
 מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2): 
- <br>
-<br>
+ <br><br>
+
    
- <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> <br>
-   
+ <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> 
+  <img src='images/rotationmatrix2.png' style="width: 30%; height: auto;"/> 
+
+   <br><br>
    במבט ראשון הכלי נראה לכאורה מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
    <br> 
     
