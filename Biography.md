@@ -43,5 +43,6 @@ Computer Vision
  </b>במקום השלישי<b>
  , 
  מתוך 60+ קבוצות ו300+ משתתפים מרחבי כל האוניברסיטאות כמו הטכניון ,העברית ות״א, חלקם במהלך התואר השני וחלקם סטודנטים העובדים בתעשייה.
+<br><br>
 
-
+<img src='images/hackathonteam.jpeg' alt='missing' style= "width: 60%; height: auto;"/>
