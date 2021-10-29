@@ -4,9 +4,9 @@ title: "Lets Build Together a Computer Vision Library!"
 
 <div dir="rtl">
 היי, שמי רועי אמויאל, בן 23, סטודנט <b>למדעי המחשב בהתמחות במדעי הנתונים</b> באוניברסיטת בן גוריון בנגב. את הלימודים התחלתי תוך כדי השירות הצבאי בחיל האוויר, באוניברסיטה הפתוחה. לאחר שהשתחררתי, סיימתי את רוב השנה הראשונה של הלימודים באוניברסיטה הפתוחה בממוצע 91 והמשכתי את לימודיי באוניברסיטת בן גוריון.
-<br><br><b>
+<br><br>
 
-<img src='images/royhackathon.png' alt='missing' style= "width: 50%; height: auto;"/>
+<img src='images/royhackathon.png' alt='missing' style= "width: 60%; height: 30%;"/>
 <br><br>
 
 לעולם הראייה הממוחשבת נחשפתי לראשונה כשהשתתפתי 
@@ -46,3 +46,4 @@ Computer Vision
 <br><br>
 
 <img src='images/hackathonteam.jpeg' alt='missing' style= "width: 60%; height: auto;"/>
+</div>
