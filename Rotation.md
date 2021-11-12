@@ -4,15 +4,15 @@ title: "Let's Build Together a Computer Vision Library!"
 <head>
 <style>
 .button {
-  background-color: #4CAF50;
+  background-color: #00ffff;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 12px;
+  margin: 1px 1px;
   cursor: pointer;
 }
 </style>
