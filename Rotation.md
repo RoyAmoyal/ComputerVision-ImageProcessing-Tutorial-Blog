@@ -65,7 +65,7 @@ title: "Let's Build Together a Computer Vision Library!"
               <img src='images/ortogonali3.png' alt='missing' style="width: 20%; height: auto;"  />
           </li>
           <li>למעשה המטריצה (הטרנספורמציה) ההופכית של מטריצה הסיבוב שווה למטריצה המשוחלפת
-           <img src='images/ortogonali2.png' alt='missing' style="width: 15%; height: auto;"  />
+           <img src='images/ortogonali2.png' alt='missing' style="width: 10%; height: auto;"  />
             כדאי לזכור זאת להמשך!  </li>
           </ul>
      </li>
@@ -81,6 +81,7 @@ title: "Let's Build Together a Computer Vision Library!"
   <img src='images/rotationmatrix3.png' style="width: 80%; height: auto;"/> 
   <br>
   תמונה נוספת להמחשה:
+  <br>
   <img src='images/rotationmatrix2.png' style="width: 60%; height: auto;"/> 
 
    <br><br>
