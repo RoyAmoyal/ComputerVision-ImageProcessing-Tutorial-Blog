@@ -62,7 +62,7 @@ title: "Let's Build Together a Computer Vision Library!"
     <li>:מטריצת הסיבוב היא מטריצה אורתוגונלית (לינארית 2), כלומר
         <ul>
           <li> מטריצת הסיבוב כפול המטריצה המשוחלפת שלה שווה למטריצת היחידה.
-              <img src='ortogonali.png' alt='missing' style="width: 40%; height: auto;"  />
+              <img src='images/ortogonali.png' alt='missing' style="width: 40%; height: auto;"  />
           </li>
           </ul>
      </li>
