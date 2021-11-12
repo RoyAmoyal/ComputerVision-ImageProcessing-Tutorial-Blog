@@ -57,8 +57,8 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <b>
 לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: (אם משהו לא מובן בחלק זה, נא לקרוא את
-  <a href="Basics.md">המדריך הבסיסי לבלוג</a>
- )
+  <a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/Basics.html">המדריך הבסיסי לבלוג</a>
+)
 </b>
 <div dir="ltr"> 
 <br>
