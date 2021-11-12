@@ -56,17 +56,17 @@ title: "Let's Build Together a Computer Vision Library!"
 </div><br>
 
 <b>
-לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: 
+לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: (אם משהו לא מובן בחלק זה, נא לקרוא את
+  <a href="Basics.md">המדריך הבסיסי לבלוג</a>
+ )
 </b>
 <div dir="ltr"> 
 <br>
 {% highlight cpp%}
 int main() {
     cv::Mat img = cv::imread("../lion.jpeg");
-    image_channels img_chan = RGB;
     
     cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
-    cv::Mat rotatedImage2(img.rows,img.cols,CV_8UC3);
 
     // Rotating
     NaiveRotation(img,rotatedImage,30);
@@ -75,8 +75,6 @@ int main() {
     // Show the images
     cv::imshow("window1",img);
     cv::imshow("window2",rotatedImage);
-    cv::imshow("window3",rotatedImage2);
-    cv::imwrite("myfile.jpeg",rotatedImage);
     cv::waitKey(0);
     // End of Show the images
 
@@ -124,6 +122,30 @@ int main() {
 כמו שניתן לראות, אמנם הצלחנו לבצע את הרוטציה אבל אך לא הצלחנו לשמר את איכות התמונה ולמעשה נוצרו חורים בין הפיקסלים.
 בעיה זו נקראת Aliasing.
 <br>
+<br>
+
+
+<h4> :הסבר לקוד </h4>
+למעשה באמצעות לולאה מקוננת נעבור על כל פיקסל בתמונה ונחשב לאן היא אמורה לעבור לתמונת יעד שלנו.
+<br>
+<ol>
+הערות:
+  <li>.כמו בחישוב במחשבון, נצטרך להעביר את הזווית שהמשתמש הכניס לרדיאנים</li>
+  <li>מכיוון שפיקסלים מיוצגים במחשב ע״ מספרים טבעיים והחישוב שלנו עלול לתת ערכים חיוביים שאינם שלמים, נצטרך לעגל לערך הקרוב ביותר כדי לבחור את הפיקסל המתאים. (מתקשר לבעיית ה
+  aliasing.</li>
+
+</ol>
+{% highlight cpp%}
+rotatedX = round(x * cos(angle * toRadian) - y * sin(angle * toRadian));
+rotatedY = round(x * sin(angle * toRadian) + y * cos(angle * toRadian));
+{% endhighlight %}
+
+
+
+
+
+
+
 <h4>Aliasing</h4>
 
 
