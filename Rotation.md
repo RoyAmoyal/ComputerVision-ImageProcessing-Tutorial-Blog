@@ -7,11 +7,11 @@ title: "Let's Build Together a Computer Vision Library!"
   background-color: #00c2c2;
   border: none;
   color: white;
-  padding: 6px 10px;
+  padding: 3px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 1px 1px;
   cursor: pointer;
   font-weight : bold ;
