@@ -65,8 +65,8 @@ title: "Let's Build Together a Computer Vision Library!"
               <img src='images/ortogonali3.png' alt='missing' style="width: 20%; height: auto;"  />
           </li>
           <li>למעשה המטריצה (הטרנספורמציה) ההופכית של מטריצה הסיבוב שווה למטריצה המשוחלפת
-           <img src='images/ortogonali2.png' alt='missing' style="width: 20%; height: auto;"  />
-          כדאי לזכור זאת להמשך! </li>
+           <img src='images/ortogonali2.png' alt='missing' style="width: 15%; height: auto;"  />
+            כדאי לזכור זאת להמשך!  </li>
           </ul>
      </li>
     </ol>
@@ -74,17 +74,26 @@ title: "Let's Build Together a Computer Vision Library!"
 
 
 
-   באופן כללי עבור הזזת הפיקסל 
-   (x,y):
+   באופן כללי בהפעלת מטריצת הסיבוב עבור הזזת הפיקסל
+   (x,y) 
+   נקבל:
 <br>
   <img src='images/rotationmatrix3.png' style="width: 80%; height: auto;"/> 
   <br>
-  <img src='images/rotationmatrix2.png' style="width: 70%; height: auto;"/> 
+  תמונה נוספת להמחשה:
+  <img src='images/rotationmatrix2.png' style="width: 60%; height: auto;"/> 
 
    <br><br>
     <b> לכאורה </b> 
   במבט ראשון הכלי נראה 
-   מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
+   מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. 
+   פשוט נעבור פיקסל-פיקסל ונבצע את הרוטציה ע״י הפעלה של המטריצה על וקטור הפיקסל, או לחילופין באופן שקול נחשב לכל פיקסל את מיקומי ה
+   x'
+   ו
+   y'
+   שלו ע״י המשוואות המתאימות.
+   <br>
+   בואו ננסה לבצע זאת:
    <br>
    <b>הערה:</b>
    בקוד הבא ביצענו רוטציה אך ורק לתמונות עם צבע, כאמור 
