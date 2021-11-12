@@ -359,7 +359,7 @@ void Interpolation_Calculator(const cv::Mat& src, cv::Mat& dst, const cv::Point2
 }
 {% endhighlight %}
 </div><br>
-
+<br>
 <b>
 נבצע את הרוטציה שלנו ע״י הטרנספורמציה ההופכית למטריצת הרוטציה:
 </b>
