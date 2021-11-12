@@ -229,7 +229,7 @@ enum interpolation_type{
 לגביו) 
 </b>
 <br>
-<button class="button" onclick="myFunction()">הראה</button>
+<button class="button" onclick="myFunction()">הראה קוד</button>
 <div dir="ltr" style="display: none" id="InterpolationDiv">
 {% highlight c++%}
 
