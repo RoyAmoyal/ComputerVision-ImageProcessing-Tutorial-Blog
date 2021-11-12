@@ -25,24 +25,26 @@ title: "Let's Build Together a Computer Vision Library!"
    
    כעת עלינו להכיר כמה כלים מתמטיים שישמשו אותנו עבור ביצוע הרוטציה. 
   <br>
-מטריצת הרוטציה (אם אני לא טועה, היא נלמדת בלינארית 2): 
+מטריצת הרוטציה (ככל הנראה נתקלתם באזכור שלה באחד מקורסי הלינארית): 
  <br><br>
 
    
  <img src='images/rotationmatrix1.png' style="width: 40%; height: auto;"/> 
  <br>
   <br>
-   עבור הזזת פיקסל (x,y):
+   באופן כללי עבור הזזת הפיקסל 
+   (x,y):
 <br>
   <img src='images/rotationmatrix3.png' style="width: 80%; height: auto;"/> 
   <br>
   <img src='images/rotationmatrix2.png' style="width: 70%; height: auto;"/> 
 
    <br><br>
-   במבט ראשון הכלי נראה <b> לכאורה </b> מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
+    <b> לכאורה </b> 
+  במבט ראשון הכלי נראה 
+   מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
    <br><br>
     
-
 
 <b> ראשית נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
@@ -62,19 +64,15 @@ title: "Let's Build Together a Computer Vision Library!"
 int main() {
     cv::Mat img = cv::imread("../lion.jpeg");
     image_channels img_chan = RGB;
-    //if(img.channels() < 3)
-      //  img_chan = GRAYSCALE;
-
+    
     cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
     cv::Mat rotatedImage2(img.rows,img.cols,CV_8UC3);
 
     // Rotating
-    RotationFunction(img,rotatedImage2,30,INTERPOLATION_NEAREST_NEIGHBOR,img_chan);
-    // End of Rotating
-    // Show the images
-
     NaiveRotation(img,rotatedImage,30);
+    // End of Rotating
 
+    // Show the images
     cv::imshow("window1",img);
     cv::imshow("window2",rotatedImage);
     cv::imshow("window3",rotatedImage2);
