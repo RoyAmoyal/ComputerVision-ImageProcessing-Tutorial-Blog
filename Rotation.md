@@ -65,7 +65,7 @@ title: "Let's Build Together a Computer Vision Library!"
               <img src='images/ortogonali3.png' alt='missing' style="width: 20%; height: auto;"  />
           </li>
           <li>למעשה המטריצה (הטרנספורמציה) ההופכית של מטריצה הסיבוב שווה למטריצה המשוחלפת
-           <img src='images/ortogonali2.png' alt='missing' style="width: 12%; height: auto;"  />
+           <img src='images/ortogonali2.png' alt='missing' style="width: 13%; height: auto;"  />
             כדאי לזכור זאת להמשך!  </li>
           </ul>
      </li>
@@ -87,8 +87,8 @@ title: "Let's Build Together a Computer Vision Library!"
    <br><br>
     <b> לכאורה </b> 
   במבט ראשון הכלי נראה 
-   מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. 
-   פשוט נעבור פיקסל-פיקסל ונבצע את הרוטציה ע״י הפעלה של המטריצה על וקטור הפיקסל, או לחילופין באופן שקול נחשב לכל פיקסל את מיקומי ה
+   מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. <br>
+   -פשוט נעבור פיקסל-פיקסל ונבצע את הרוטציה ע״י הפעלה של המטריצה על וקטור הפיקסל, או לחילופין באופן שקול נחשב לכל פיקסל את מיקומי ה
    (x',y')
    שלו ע״י המשוואה המתאימה לחישוב
    x'
@@ -115,8 +115,7 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <b>
 לאחר מכן נכתוב את התוכנית המרכזית להצגת התמונות: (אם משהו לא מובן בחלק זה, נא לקרוא את
-  <a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/Basics.html">המדריך הבסיסי לבלוג</a>
-)
+<a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/Basics.html">המדריך הבסיסי לבלוג</a>)
 </b>
 <div dir="ltr"> 
 <br>
