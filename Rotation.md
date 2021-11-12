@@ -205,14 +205,180 @@ enum interpolation_type{
 {% endhighlight %}
 </div><br>
 
-<b> כעת נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
-<br>
-באופן דיפולטיבי נגדיר את תמונת היעד שלנו כתמונה בעלת 3 
-channels 
-כלומר שמכילה תמונות עם צבע. 
-<br>
-בפונקציית הרוטציה שלנו נדאג לטפל במקרה בו התמונה שנשלחה אלינו היא 
-GrayScale.
+<b> כעת נשתמש בפונקציות האינטרפולציה שלנו 
+(ראו את 
+<a href="index.md">המדריך</a>
+לגביו) 
+</b>
+
+<div dir="ltr">
+
+{% highlight c++%}
+
+void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+    // Find Nearest Neighbor
+    int NearestNeighborX = (int) round(srcPoint.x);
+    int NearestNeighborY = (int) round(srcPoint.y);
+    cv::Point NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
+    if (src.channels() > 1)
+    { //RGB image
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<cv::Vec3b>(dstPixel) = 0;
+        else
+            dst.at<cv::Vec3b>(dstPixel) = src.at<cv::Vec3b>(NearestNeighborPixel);
+    }
+    else// GrayScale Image
+    {
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<uchar>(dstPixel) = 0;
+        else
+            dst.at<uchar>(dstPixel) = src.at<uchar>(NearestNeighborPixel);
+    }
+}
+
+
+
+void Linear_Interpolation_BGRandRGBHelper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+
+    // Lets find the 4-Nearest Neighbors of our "landing" spot.
+    // (r,c),(r,c+1),(r+1,c),(r+1,c+1)
+    int leftUpperNeighborX = floor(srcPoint.x);
+    int leftUpperNeighborY = floor(srcPoint.y);
+    // (r,c)
+    cv::Point2i leftUpperNeighbor(leftUpperNeighborX, leftUpperNeighborY);
+    // (r,c+1)
+    cv::Point2i leftBottomNeighbor(leftUpperNeighborX, leftUpperNeighborY + 1);
+    // (r+1,c)
+    cv::Point2i rightUpperNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY);
+    // (r+1,c+1)
+    cv::Point2i rightBottomNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY + 1);
+
+    // ratioX = Alpha , ratioY = Beta
+    // 0 <= ratioX,ratioY <= 1
+    double Alpha = srcPoint.x - (double) leftUpperNeighborX;
+    double Beta = srcPoint.y - (double) leftUpperNeighborY;
+
+    if (leftUpperNeighbor.x < 0 || leftUpperNeighbor.x >= src.cols - 1 || leftUpperNeighbor.y < 0 || leftUpperNeighbor.y >= src.rows - 1)
+        dst.at<cv::Vec3b>(dstPixel) = 0;  // ratio with the left upper neighbor
+    else {
+        int B = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[0] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[0] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[0] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[0]);
+
+        int G = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[1] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[1] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[1] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[1]);
+
+        int R = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[2] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[2] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[2] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[2]);
+
+        cv::Vec3b newVal(B, G, R);
+        dst.at<cv::Vec3b>(dstPixel) = newVal;
+    }
+}
+
+
+void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+    // Lets find the 4-Nearest Neighbors of our "landing" spot.
+    // (r,c),(r,c+1),(r+1,c),(r+1,c+1)
+    int leftUpperNeighborX = floor(srcPoint.x);
+    int leftUpperNeighborY = floor(srcPoint.y);
+    // (r,c)
+    cv::Point2i leftUpperNeighbor(leftUpperNeighborX, leftUpperNeighborY);
+    // (r,c+1)
+    cv::Point2i leftBottomNeighbor(leftUpperNeighborX, leftUpperNeighborY + 1);
+    // (r+1,c)
+    cv::Point2i rightUpperNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY);
+    // (r+1,c+1)
+    cv::Point2i rightBottomNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY + 1);
+
+    // ratioX = Alpha , ratioY = Beta
+    // 0 <= ratioX,ratioY <= 1
+    double Alpha = srcPoint.x - (double) leftUpperNeighborX;
+    double Beta = srcPoint.y - (double) leftUpperNeighborY;
+
+    if (leftUpperNeighbor.x < 0 || leftUpperNeighbor.x > src.cols - 1 || leftUpperNeighbor.y < 0 || leftUpperNeighbor.y > src.rows - 1)
+        dst.at<uchar>(dstPixel) = 0;
+    else {
+
+        int greyValue = int((1 - Alpha) * (1 - Beta) * src.at<uchar>(leftUpperNeighbor) +
+                            (1 - Alpha) * (Beta) * src.at<uchar>(rightUpperNeighbor) +
+                            (Alpha) * (1 - Beta) * src.at<uchar>(leftBottomNeighbor) +
+                            (Alpha) * (Beta) * src.at<uchar>(rightBottomNeighbor));
+
+        dst.at<uchar>(dstPixel) = greyValue;
+
+
+    }
+}
+
+
+
+void Interpolation_Calculator(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel, interpolation_type inter_type){
+    // The origin pixels for the currPixel in the newImage depends on the interpolation type
+
+        switch(inter_type) {
+            case INTERPOLATION_NEAREST_NEIGHBOR: {
+                NearestNeighbor_Interpolation_Helper(src,dst,srcPoint,dstPixel);
+            }
+            case INTERPOLATION_LINEAR:
+                if(src.channels() > 1) //if its BGR/RGB Image (3 channel Image)
+                    Linear_Interpolation_BGRandRGBHelper(src,dst,srcPoint,dstPixel);
+                else // GrayScale/Binary Image
+                    Linear_Interpolation_GRAYHelper(src,dst,srcPoint,dstPixel);
+            case INTERPOLATION_CUBIC:
+                if(src.channels() > 1) //if its BGR/RGB Image (3 channel Image)
+                    Linear_Interpolation_BGRandRGBHelper(src,dst,srcPoint,dstPixel);
+                else // GrayScale/Binary Image
+                    Cubic_Interpolation_GRAYHelper(src,dst,srcPoint,dstPixel);
+    }
+}
+{% endhighlight %}
+</div><br>
+
+<b>
+נבצע את הרוטציה שלנו ע״י הטרנספורמציה ההופכית למטריצת הרוטציה:
+</b>
+
+<div dir="ltr">
+{% highlight c++%}
+void RotationFunction(const cv::Mat& src, cv::Mat& dst, int angle, interpolation_type inter_type) {
+    // The pixels in the new image we want to find right origin pixel for his value.
+    if (src.channels() != dst.channels())
+        throw std::invalid_argument(
+                "Source Image and Destination Image have different channels. (Probably one is greyscale and the other BGR/RGB)");
+
+    double rotatedX;
+    double rotatedY;
+
+    double toRadian = 3.141592653589 / 180;
+
+    for (int x = 0; x < dst.cols; x++) // We can use the width instead of the cols.
+    {
+        for (int y = 0; y < dst.rows; y++) // We cna use the height instead of the rows.
+        {
+
+            rotatedX = x * cos(angle * toRadian) + y * sin(angle * toRadian);
+            rotatedY = x * (-sin(angle * toRadian)) + y * cos(angle * toRadian);
+
+            cv::Point2d srcPoint(rotatedX, rotatedY);
+            cv::Point2i dstPixel(x, y);
+            Interpolation_Calculator(src, dst, srcPoint, dstPixel, inter_type);
+        }
+    }
+}
+{% endhighlight %}
+</div><br>
+
+
+<b> לבסוף נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
 <br>
 <br>
 <div dir="ltr">
@@ -234,6 +400,14 @@ int main() {
 {% endhighlight %}
 </div><br>
 
+<b> התוצאה שקיבלנו: </b>
+<br>
+
+
+<figure>
+    <img src='images/rotatedImageGood.jpeg' alt='missing' />
+    <figcaption> רוטציה  </figcaption>
+</figure>
 
 
 
