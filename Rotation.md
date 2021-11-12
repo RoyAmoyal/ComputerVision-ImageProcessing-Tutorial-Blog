@@ -42,7 +42,15 @@ title: "Let's Build Together a Computer Vision Library!"
     <b> לכאורה </b> 
   במבט ראשון הכלי נראה 
    מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. בואו ננסה להשתמש בה. 
-   <br><br>
+   <br>
+   <b>הערה:</b>
+   בקוד הבא ביצענו רוטציה אך ורק לתמונות עם צבע, כאמור 
+   BGR.
+   בהמשך נדאג גם לבצע את הרוטציה לתמונות 
+   Grayscale
+   <br>
+   <br>
+
     
 
 <b> ראשית נייבא את הספריות הדרושות לנו: </b>
@@ -158,6 +166,74 @@ OpenCV
 , ברגע שמנסים להזין ערך לפיקסל מחצה את גבולות התמונה, למעשה הערך יוזן לפיקסל שנמצא בגבולות התמונה אליו נגיע באופן מעגלי מתחילת אותה העמודה או השורה אותה חצינו.
 <br>
 לדוגמה:
+
+
+
+<br>
+<br>
+<h4>
+כעת נפתור את הבעיה באמצעות
+<a href="index.md">אינטרפולציה</a>
+</h4>
+<br>
+
+
+<b> כמו קודם נייבא את הספריות הדרושות לנו: </b>
+<div dir="ltr">
+{% highlight c++%}
+#include <iostream>
+#include <cmath>
+#include "opencv2/opencv.hpp"
+{% endhighlight %}
+</div><br>
+
+
+<b>-נשתמש ב
+enums
+כדי להקל על בחירת איכות התמונה למשתמש</b>
+
+
+<div dir="ltr">
+{% highlight c++%}
+using namespace std;
+
+enum interpolation_type{
+    INTERPOLATION_CUBIC,
+    INTERPOLATION_LINEAR,
+    INTERPOLATION_NEAREST_NEIGHBOR
+};
+{% endhighlight %}
+</div><br>
+
+<b> כעת נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
+<br>
+באופן דיפולטיבי נגדיר את תמונת היעד שלנו כתמונה בעלת 3 
+channels 
+כלומר שמכילה תמונות עם צבע. 
+<br>
+בפונקציית הרוטציה שלנו נדאג לטפל במקרה בו התמונה שנשלחה אלינו היא 
+GrayScale.
+<br>
+<br>
+<div dir="ltr">
+{% highlight c++%}
+int main() {
+    cv::Mat img = cv::imread("../shark.jpeg");
+    //if(img.channels() < 3)
+      //  img_chan = GRAYSCALE;
+
+    cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
+
+    RotationFunction(img,rotatedImage2,10,INTERPOLATION_LINEAR);
+
+{% endhighlight %}
+</div><br>
+
+
+
+
+
+
 
 
 
