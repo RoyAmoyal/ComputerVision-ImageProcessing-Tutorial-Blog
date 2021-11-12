@@ -65,7 +65,7 @@ title: "Let's Build Together a Computer Vision Library!"
               <img src='images/ortogonali3.png' alt='missing' style="width: 20%; height: auto;"  />
           </li>
           <li>למעשה המטריצה (הטרנספורמציה) ההופכית של מטריצה הסיבוב שווה למטריצה המשוחלפת
-           <img src='images/ortogonali2.png' alt='missing' style="width: 10%; height: auto;"  />
+           <img src='images/ortogonali2.png' alt='missing' style="width: 12%; height: auto;"  />
             כדאי לזכור זאת להמשך!  </li>
           </ul>
      </li>
@@ -89,21 +89,20 @@ title: "Let's Build Together a Computer Vision Library!"
   במבט ראשון הכלי נראה 
    מושלם לביצוע הרוטציה שאנחנו צריכים עבור התמונה. 
    פשוט נעבור פיקסל-פיקסל ונבצע את הרוטציה ע״י הפעלה של המטריצה על וקטור הפיקסל, או לחילופין באופן שקול נחשב לכל פיקסל את מיקומי ה
+   (x',y')
+   שלו ע״י המשוואה המתאימה לחישוב
    x'
-   ו
-   y'
-   שלו ע״י המשוואות המתאימות.
+   והמשוואה המתאימה לחישוב y'.
    <br>
-   בואו ננסה לבצע זאת:
-   <br><br>
+   <br>
    <b>הערה:</b>
    בקוד הבא ביצענו רוטציה אך ורק לתמונות עם צבע.
    בהמשך נדאג גם לבצע את הרוטציה לתמונות 
    Grayscale
    <br>
    <br>
-
-    
+   <u> בואו ננסה לבצע זאת: </u>
+  <br>
 
 <b> ראשית נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
