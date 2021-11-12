@@ -5,7 +5,7 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <div dir="rtl">
    <h1 align=center>Basics</h1>
-  <h2 align=center>><u> Necessary math for taking these tutorials <u></h2> 
+  <h2 align=center><u> Necessary math for taking these tutorials <u></h2> 
   לכל חלק במדריכים אשתדל לכוון אילו קורסים מתמטיים אקדמאיים תצטרכו עבורו. 
   <ul>
   <li> Image Processing: Affine Transformations -  הקורס אלגברה לינארית 1 אמור להספיק אך רצוי להיות לאחר אלגברה 2</li>
