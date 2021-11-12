@@ -14,6 +14,8 @@ title: "Let's Build Together a Computer Vision Library!"
   font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
+  font-weight : bold ;
+
 }
 </style>
 </head>
