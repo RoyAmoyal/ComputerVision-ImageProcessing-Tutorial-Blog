@@ -9,8 +9,8 @@ title: "Let's Build Together a Computer Vision Library!"
   לכל חלק במדריכים אשתדל לכוון אילו קורסים מתמטיים אקדמאיים תצטרכו עבורו. 
   <br>
   <ul>
-  <li> <u><b>Image Processing: Affine Transformations</b></u> -  הקורס אלגברה לינארית 1 אמור להספיק אך רצוי להיות לאחר אלגברה 2</li>
-  <li> <u><b>Image Processing: Histogram Equalization</b></u> - אינפי/חדווא 1-2, הסתברות/מבוא להסתברות למדעי המחשב</li>
+  <li> <u><b>Image Processing: Affine Transformations</b></u> -  הקורס אלגברה לינארית 1 אמור להספיק אך רצוי להיות לאחר אלגברה 2.</li>
+  <li> <u><b>Image Processing: Histogram Equalization</b></u> - אינפי/חדווא 1-2, הסתברות/מבוא להסתברות למדעי המחשב.</li>
   <li> Computer Vision: Optical Flow - TODO</li>
 </ul>
    <br>
@@ -20,7 +20,9 @@ title: "Let's Build Together a Computer Vision Library!"
   OpenCV. 
   <br>
   בכל מדריך אמנע משימוש ב- 
+  {% highlight c++%}
   using namespace cv;   
+  {% endhighlight %}
 זאת על מנת להקל עליכם להבין מתי אנחנו משתמשים באובייקטים ובפונקציות של הספרייה ומתי אנו רושמים קוד אותנטי שלנו.
   <br><br>
   
