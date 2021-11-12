@@ -395,7 +395,6 @@ void RotationFunction(const cv::Mat& src, cv::Mat& dst, int angle, interpolation
 {% endhighlight %}
 </div><br>
 <div id="space1"><br></div>
-
 <b> לבסוף נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
 <br>
 <br>
