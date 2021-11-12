@@ -230,8 +230,7 @@ enum interpolation_type{
 </b>
 <br>
 <button class="button" onclick="myFunction()">הראה</button>
-<div dir="ltr" id="InterpolationDiv">
-
+<div dir="ltr" style="visibility: hidden" id="InterpolationDiv">
 {% highlight c++%}
 
 void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
