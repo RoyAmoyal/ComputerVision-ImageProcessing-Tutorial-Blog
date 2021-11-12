@@ -3,7 +3,7 @@ title: "Let's Build Together a Computer Vision Library!"
 ---
 
 
-<div dir="rtl">
+<div dir="rtl" style="font-size:20px;">
    <h1 align=center>Basics</h1>
   <h2 align=center><u> Necessary math for taking these tutorials </u></h2> 
   לכל חלק במדריכים אשתדל לכוון אילו קורסים מתמטיים אקדמאיים תצטרכו עבורו. 
