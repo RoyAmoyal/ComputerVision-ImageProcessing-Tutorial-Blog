@@ -11,7 +11,7 @@ title: "Let's Build Together a Computer Vision Library!"
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
 }
