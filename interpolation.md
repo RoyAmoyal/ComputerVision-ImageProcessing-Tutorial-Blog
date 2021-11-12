@@ -3,7 +3,7 @@ title: "Let's Build Together a Computer Vision Library!"
 ---
 
 <div dir="rtl">
-<h1> The Spatial Aliasing Problem - בעיית ״קיפולי התדר״ <h1>
+<h1> The Spatial Aliasing Problem - בעיית ״קיפולי התדר״ </h1>
 Spatial Aliasing
 - 
 היא למעשה דגימה לא יעילה או מספקת של הנתונים לאורך הצירים.
