@@ -1,10 +1,10 @@
 ---
-title:  "Roy's Computer Vision Library Blog"
+title: "Let's Build Together a Computer Vision Library!"
 ---
 
 <div dir="rtl">
-   <h1 align=center>Affine Transformations </h1>
-  <h2> Image Rotation </h2>
+   <h1 align=center>Affine Transformations</h1>
+  <h2> Image Rotation </h2> 
     אז בחלק הזה נלמד איך לעשות רוטציות לתמונה. ראשית אציג את הדרך הנאיבית בה היווצרו חורים בתמונה (בשל הזזת הפיקסלים) ולאחר מכן נפתור את הבעייה באמצעות שימוש באינטרפולציה שעליה פירטתי בהרחבה בפוסט הבא <a href="index.md">interpolation</a>. <br> 
   
       

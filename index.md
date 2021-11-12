@@ -1,5 +1,5 @@
 ---
-title: "Lets Build Together a Computer Vision Library!"
+title: "Let's Build Together a Computer Vision Library!"
 ---
 
 [Biograhpy (Highly Recommended for Interviewers and Employers)](Biography.md)
@@ -10,4 +10,4 @@ title: "Lets Build Together a Computer Vision Library!"
 <br>
 <br>
 
-[Lets Begin!](AffineTransformations.md)
+[Lets Begin!](Tutorials-Content.md)

@@ -1,5 +1,5 @@
 ---
-title: "Lets Build Together a Computer Vision Library!"
+title: "Let's Build Together a Computer Vision Library!"
 ---
 
 <div dir="rtl">
