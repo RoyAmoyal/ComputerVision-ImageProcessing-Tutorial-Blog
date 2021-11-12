@@ -359,6 +359,7 @@ void Interpolation_Calculator(const cv::Mat& src, cv::Mat& dst, const cv::Point2
 }
 {% endhighlight %}
 </div><br>
+
 <br>
 <b>
 נבצע את הרוטציה שלנו ע״י הטרנספורמציה ההופכית למטריצת הרוטציה:
@@ -393,7 +394,7 @@ void RotationFunction(const cv::Mat& src, cv::Mat& dst, int angle, interpolation
 }
 {% endhighlight %}
 </div><br>
-
+<div id="space1"><br></div>
 
 <b> לבסוף נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
 <br>
@@ -407,7 +408,7 @@ int main() {
 
     cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
 
-    RotationFunction(img,rotatedImage2,10,INTERPOLATION_LINEAR);
+    RotationFunction(img,rotatedImage,30,INTERPOLATION_LINEAR);
 
     // Show the images
     cv::imshow("Original Image",img);
@@ -473,13 +474,17 @@ int main() {
 <script>
 function myFunction() {
   var x = document.getElementById("InterpolationDiv");
+  var space = document.getElementById("space1");
   var button = document.getElementById("InterpolationButton");
   if (x.style.display === "none") {
     x.style.display = "block";
     button.textContent = "הסתר קוד";
+    space1.style.display = "none";
   } else {
     x.style.display = "none";
     button.textContent = "הראה קוד";
+    space1.style.display = "block";
+
   }
 }
 </script>
