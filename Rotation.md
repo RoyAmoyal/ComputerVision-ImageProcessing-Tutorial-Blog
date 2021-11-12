@@ -405,7 +405,7 @@ int main() {
 
 
 <figure>
-    <img src='images/rotatedImageGood.jpeg' alt='missing' />
+    <img src='images/rotatedImageGood.png' alt='missing' />
     <figcaption> רוטציה  </figcaption>
 </figure>
 
