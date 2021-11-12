@@ -211,7 +211,7 @@ enum interpolation_type{
 לגביו) 
 </b>
 
-<div dir="ltr">
+<div dir="ltr" id="InterpolationDiv">
 
 {% highlight c++%}
 
@@ -453,3 +453,13 @@ int main() {
    
    
    
+<script>
+function myFunction() {
+  var x = document.getElementById("InterpolationDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
