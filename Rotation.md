@@ -1,6 +1,22 @@
 ---
 title: "Let's Build Together a Computer Vision Library!"
 ---
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
 
 <div dir="rtl">
    <h1 align=center>Affine Transformations</h1>
@@ -210,7 +226,8 @@ enum interpolation_type{
 <a href="index.md">המדריך</a>
 לגביו) 
 </b>
-<button onclick="myFunction()">הראה</button>
+<br>
+<button class="button" onclick="myFunction()">הראה</button>
 <div dir="ltr" id="InterpolationDiv">
 
 {% highlight c++%}
