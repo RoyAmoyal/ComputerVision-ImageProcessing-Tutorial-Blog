@@ -228,7 +228,6 @@ enum interpolation_type{
 <a href="index.md">המדריך</a>
 לגביו) 
 </b>
-<br>
 <button id="InterpolationButton" class="button" onclick="myFunction()">הראה קוד</button>
 <div dir="ltr" style="display: none" id="InterpolationDiv">
 {% highlight c++%}
