@@ -229,7 +229,7 @@ enum interpolation_type{
 לגביו) 
 </b>
 <br>
-<button class="button" onclick="myFunction()">הראה קוד</button>
+<button id="InterpolationButton" class="button" onclick="myFunction()">הראה קוד</button>
 <div dir="ltr" style="display: none" id="InterpolationDiv">
 {% highlight c++%}
 
@@ -474,10 +474,13 @@ int main() {
 <script>
 function myFunction() {
   var x = document.getElementById("InterpolationDiv");
+  var button = document.getElementById("InterpolationButton");
   if (x.style.display === "none") {
     x.style.display = "block";
+    button.value = "הסתר";
   } else {
     x.style.display = "none";
+    button.value = "הראה";
   }
 }
 </script>
