@@ -189,7 +189,7 @@ OpenCV
 
 
 <b>נשתמש ב
-enums-
+- enums
 כדי להקל על בחירת איכות התמונה למשתמש</b>
 
 
@@ -218,13 +218,18 @@ GrayScale.
 <div dir="ltr">
 {% highlight c++%}
 int main() {
-    cv::Mat img = cv::imread("../shark.jpeg");
+    cv::Mat img = cv::imread("../lion.jpeg");
     //if(img.channels() < 3)
       //  img_chan = GRAYSCALE;
 
     cv::Mat rotatedImage(img.rows,img.cols,CV_8UC3);
 
     RotationFunction(img,rotatedImage2,10,INTERPOLATION_LINEAR);
+
+    // Show the images
+    cv::imshow("Original Image",img);
+    cv::imshow("Rotated Image",rotatedImage);
+    cv::waitKey(0);
 
 {% endhighlight %}
 </div><br>
