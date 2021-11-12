@@ -113,7 +113,6 @@ int main() {
 }
 {% endhighlight %}
 </div><br>
-<div dir="rtl">
 <b> וזו התוצאה שנקבל:<b>
 <br>
 <img src='images/badlion.png' style="width: 90%; height: auto;"/> <br>
@@ -126,15 +125,15 @@ int main() {
 
 
 <h4> :הסבר לקוד </h4>
-</div>
-
+<div dir="ltr">
 {% highlight cpp%}
 rotatedX = round(x * cos(angle * toRadian) - y * sin(angle * toRadian));
 rotatedY = round(x * sin(angle * toRadian) + y * cos(angle * toRadian));
 cv::Point2i dstPixel((int) rotatedX, (int) rotatedY);
 
 {% endhighlight %}
-<div dir="rtl">
+</div>
+
 למעשה באמצעות לולאה מקוננת נעבור על כל פיקסל בתמונה ונחשב לאן היא אמורה לעבור לתמונת יעד שלנו.
 <br>
 <ol>
@@ -144,15 +143,15 @@ cv::Point2i dstPixel((int) rotatedX, (int) rotatedY);
   aliasing.</li>
 </ol>
 
-</div>
+<div dir="ltr">
 {% highlight cpp%}
 if (dstPixel.x < 0 || dstPixel.x > src.cols - 1 || dstPixel.y < 0 || dstPixel.y > src.rows - 1)
                 dst.at<cv::Vec3b>(cv::Point(x, y)) = 0;
             else { // In case everything is good
                 dst.at<cv::Vec3b>(dstPixel) = src.at<cv::Vec3b>(cv::Point(x, y));
 {% endhighlight %}
+</div>
 
-<div dir="rtl">
 מכיוון שאנו מזיזים את התמונה, ישנם פיקסלים שערך הפיקסל החדש בתמונה היעד, יצא למעשה מגבולות התמונה, כלומר באופן מעשי הוא אמור להיעלם.
 בפועל באופן דיפולטיבי ב
 OpenCV 
