@@ -403,10 +403,18 @@ int main() {
 <b> התוצאה שקיבלנו: </b>
 <br>
 
+אינטרפולציה לשכן הכי קרוב:
+<figure>
+    <img src='images/rotatedImageNearest.png' alt='missing' />
+    <figcaption>   </figcaption>
+</figure>
 
+<br>
+<br>
+אינטרפולציה לינארית:
 <figure>
     <img src='images/rotatedImageGood.png' alt='missing' />
-    <figcaption> רוטציה  </figcaption>
+    <figcaption>   </figcaption>
 </figure>
 
 
