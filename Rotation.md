@@ -477,10 +477,10 @@ function myFunction() {
   var button = document.getElementById("InterpolationButton");
   if (x.style.display === "none") {
     x.style.display = "block";
-    button.value = "הסתר קוד";
+    button.textContent = "הסתר קוד";
   } else {
     x.style.display = "none";
-    button.value = "הראה קוד";
+    button.textContent = "הראה קוד";
   }
 }
 </script>
