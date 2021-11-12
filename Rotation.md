@@ -4,7 +4,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <head>
 <style>
 .button {
-  background-color: #00ffff;
+  background-color: #00c2c2;
   border: none;
   color: white;
   padding: 10px 16px;
