@@ -479,12 +479,11 @@ function myFunction() {
   if (x.style.display === "none") {
     x.style.display = "block";
     button.textContent = "הסתר קוד";
-    space1.style.display = "none";
+    space.style.display = "none";
   } else {
     x.style.display = "none";
     button.textContent = "הראה קוד";
-    space1.style.display = "block";
-
+    space.style.display = "block";
   }
 }
 </script>
