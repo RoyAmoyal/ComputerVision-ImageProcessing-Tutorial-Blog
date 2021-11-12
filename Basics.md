@@ -20,7 +20,7 @@ title: "Let's Build Together a Computer Vision Library!"
   OpenCV. 
   <br>
   בכל מדריך אמנע משימוש ב- 
- <mark style="background-color:rgb(220, 220, 220)">
+ <mark style="background-color:rgba(220, 220, 220,0.3)">
   using namespace cv;   
 </mark>
 זאת על מנת להקל עליכם להבין מתי אנחנו משתמשים באובייקטים ובפונקציות של הספרייה ומתי אנו רושמים קוד אותנטי שלנו.
