@@ -9,11 +9,10 @@ title: "Let's Build Together a Computer Vision Library!"
   לכל חלק במדריכים אשתדל לכוון אילו קורסים מתמטיים אקדמאיים תצטרכו עבורו. 
   <br>
   <ul>
-  <li> **Image Processing: Affine Transformations** -  הקורס אלגברה לינארית 1 אמור להספיק אך רצוי להיות לאחר אלגברה 2</li>
-  <li> **Image Processing: Histogram Equalization** - אינפי/חדווא 1-2, הסתברות/מבוא להסתברות למדעי המחשב</li>
-  <li>**Computer Vision: Optical Flow** - TODO</li>
+  <li> <b>Image Processing: Affine Transformations</b> -  הקורס אלגברה לינארית 1 אמור להספיק אך רצוי להיות לאחר אלגברה 2</li>
+  <li> <b>Image Processing: Histogram Equalization</b> - אינפי/חדווא 1-2, הסתברות/מבוא להסתברות למדעי המחשב</li>
+  <li> Computer Vision: Optical Flow - TODO</li>
 </ul>
-   <br>
    <br>
 
   <h2> Basics methods and objects of OpenCV </h2> 
@@ -24,8 +23,8 @@ title: "Let's Build Together a Computer Vision Library!"
   using namespace cv;   
 זאת על מנת להקל עליכם להבין מתי אנחנו משתמשים באובייקטים ובפונקציות של הספרייה ומתי אנו רושמים קוד אותנטי שלנו.
   <br>
-  <br>
-  **הערה:** אל תטעו, תהיה לנו מספיק עבודה קשה גם במתמטיקה וגם בקוד כדי לבצע את הנדרש.
+  
+  </b>הערה:<b> אל תטעו, תהיה לנו מספיק עבודה קשה גם במתמטיקה וגם בקוד כדי לבצע את הנדרש.
   <br>
   <BR>
   <ul>
