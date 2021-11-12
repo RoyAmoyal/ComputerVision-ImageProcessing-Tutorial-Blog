@@ -112,7 +112,7 @@ int main() {
 }
 {% endhighlight %}
 </div><br>
-<b> וזו התוצאה שנקבל:<b>
+<b> וזו התוצאה שנקבל:</b>
 <br>
 <img src='images/badlion.png' style="width: 90%; height: auto;"/> <br>
 
@@ -123,7 +123,7 @@ int main() {
 <br>
 
 
-<h4> :הסבר לקוד </h4>
+<h4> הסבר לקוד: </h4>
 <div dir="ltr">
 {% highlight cpp%}
 rotatedX = round(x * cos(angle * toRadian) - y * sin(angle * toRadian));
