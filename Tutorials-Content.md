@@ -9,7 +9,7 @@ title: "Let's Build Together a Computer Vision Library!"
 # Image Processing
 ## Affine Transformations
 - [**Rotation** and presentation of the **Aliasing** problem](Rotation.md)
-- [**Aliasing Problem** and the **Interpolation Solution**](Interpolaation.md)
+- [**Aliasing Problem** and the **Interpolation Solution**](interpolation.md)
 - [**Scale**](AffineTransformations.md)
 - [**Sheer** horizontal & vertical](AffineTransformations.md)
 
