@@ -359,12 +359,12 @@ void Interpolation_Calculator(const cv::Mat& src, cv::Mat& dst, const cv::Point2
 }
 {% endhighlight %}
 </div><br>
-
+<div id="space1"><br></div>
 <br>
 <b>
 נבצע את הרוטציה שלנו ע״י הטרנספורמציה ההופכית למטריצת הרוטציה:
 </b>
-
+<br>
 <div dir="ltr">
 {% highlight c++%}
 void RotationFunction(const cv::Mat& src, cv::Mat& dst, int angle, interpolation_type inter_type) {
@@ -394,7 +394,7 @@ void RotationFunction(const cv::Mat& src, cv::Mat& dst, int angle, interpolation
 }
 {% endhighlight %}
 </div><br>
-<div id="space1"><br></div>
+
 <b> לבסוף נכתוב את הקוד הדרוש לקריאה והצגת התמונות. </b>
 <br>
 <br>
