@@ -22,7 +22,7 @@ title: "Let's Build Together a Computer Vision Library!"
   בכל מדריך אמנע משימוש ב- 
  <mark style="background-color:gray">
   using namespace cv;   
-  {% endhighlight %}
+</mark>
 זאת על מנת להקל עליכם להבין מתי אנחנו משתמשים באובייקטים ובפונקציות של הספרייה ומתי אנו רושמים קוד אותנטי שלנו.
   <br><br>
   
