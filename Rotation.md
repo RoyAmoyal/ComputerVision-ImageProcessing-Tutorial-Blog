@@ -126,6 +126,13 @@ int main() {
 
 
 <h4> :הסבר לקוד </h4>
+{% highlight cpp%}
+rotatedX = round(x * cos(angle * toRadian) - y * sin(angle * toRadian));
+rotatedY = round(x * sin(angle * toRadian) + y * cos(angle * toRadian));
+cv::Point2i dstPixel((int) rotatedX, (int) rotatedY);
+
+{% endhighlight %}
+
 למעשה באמצעות לולאה מקוננת נעבור על כל פיקסל בתמונה ונחשב לאן היא אמורה לעבור לתמונת יעד שלנו.
 <br>
 <ol>
@@ -133,12 +140,22 @@ int main() {
   <li>.כמו בחישוב במחשבון, נצטרך להעביר את הזווית שהמשתמש הכניס לרדיאנים</li>
   <li>מכיוון שפיקסלים מיוצגים במחשב ע״ מספרים טבעיים והחישוב שלנו עלול לתת ערכים חיוביים שאינם שלמים, נצטרך לעגל לערך הקרוב ביותר כדי לבחור את הפיקסל המתאים. (מתקשר לבעיית ה
   aliasing.</li>
-
 </ol>
+
+
 {% highlight cpp%}
-rotatedX = round(x * cos(angle * toRadian) - y * sin(angle * toRadian));
-rotatedY = round(x * sin(angle * toRadian) + y * cos(angle * toRadian));
+if (dstPixel.x < 0 || dstPixel.x > src.cols - 1 || dstPixel.y < 0 || dstPixel.y > src.rows - 1)
+                dst.at<cv::Vec3b>(cv::Point(x, y)) = 0;
+            else { // In case everything is good
+                dst.at<cv::Vec3b>(dstPixel) = src.at<cv::Vec3b>(cv::Point(x, y));
 {% endhighlight %}
+
+מכיוון שאנו מזיזים את התמונה, ישנם פיקסלים שערך הפיקסל החדש בתמונה היעד, יצא למעשה מגבולות התמונה, כלומר באופן מעשי הוא אמור להיעלם.
+בפועל באופן דיפולטיבי ב
+OpenCV 
+, ברגע שמנסים להזין ערך לפיקסל מחצה את גבולות התמונה, למעשה הערך יוזן לפיקסל שנמצא בגבולות התמונה אליו נגיע באופן מעגלי מתחילת אותה העמודה או השורה אותה חצינו.
+<br>
+לדוגמה:
 
 
 
