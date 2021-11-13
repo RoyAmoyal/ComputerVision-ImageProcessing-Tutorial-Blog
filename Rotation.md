@@ -15,7 +15,11 @@ title: "Let's Build Together a Computer Vision Library!"
   margin: 1px 1px;
   cursor: pointer;
   font-weight : bold ;
-
+}
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 </head>
@@ -230,7 +234,7 @@ OpenCV
 <br>
 אם ניזכר בתכונות מטריצת הסיבוב שציינו בתחילת הבלוג, נשים לב שהמטריצה היא מטריצה אורתוגונלית ולכן המטריצה המשוחלפת שלה שווה למטריצה ההופכית כלומר:
 <br>
-<img align = "center" src='images/reverseRotation.png' style="width: 40%; height: auto;"/> <br>
+<img src='images/reverseRotation.png' style="width: 40%; height: auto;" class="centerImage"/> <br>
 <b> כמו קודם נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
 {% highlight c++%}
