@@ -29,14 +29,15 @@ title: "Let's Build Together a Computer Vision Library!"
 </u>
 <br>
 
+<figure>
 <img src='images/theVeryBest.jpeg' style="width: 40%; height: auto;" class="centerImage"/> 
-<br>
+</figure>
 
 <h1 align="center"><b><u>Blog Agenda</u></b></h1>
 המטרה העיקרית של הבלוג היא לספק מידע נגיש, ומעמיק לכל אדם ובפרט לסטודנטים, שרוצים להעמיק את הידע שלהם בתחום הראייה הממוחשבת. בחרתי לעשות זאת בעברית, גם כדי להאיץ את קצב כתיבת הבלוג שלי, גם כדי לשמור על ייחודיות הבלוג (למרות שאני בטוח שתתקשו למצוא מידע כזה מונגש עם קוד אותנטי על כל אלגוריתם ואלגוריתם גם באנגלית) ובמיוחד כדי להקל על סטודנטים להיכנס לתחום מבלי לפחד מאנגלית ומהמושגים החדשים.
 <br>
 
 <br>
-<img src='images/theVeryBest.jpeg' style="width: 60%; height: auto;"/> 
+
 
 </div>
