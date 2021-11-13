@@ -3,7 +3,8 @@ title: "Let's Build Together a Computer Vision Library!"
 ---
 
 <div dir="rtl">
-<h1 align="center"><b><u>ברוכים הבאים לבלוג <br>
+<h1 align="center">ברוכים הבאים לבלוג <br>
+<b><u>
 ״בואו נבנה יחד ספריית ראייה ממוחשבת ועיבוד תמונה״
 </u></b></h1>
 הבלוג מיועד:
