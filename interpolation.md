@@ -62,6 +62,8 @@ title: "Let's Build Together a Computer Vision Library!"
     <li>יהיו פיקסלים בתמונת היעד שלא ניתן להם דגימה מתמונת המקור ובפועל נקבל תמונה ״מחוררת״ בה יהיה חסר צבע לחלק מהפיקסלים</li>
     <li>יהיו פיקסלים שנדגום להם פעמיים צבע מתמונת המקור ולכן ערכים ידרסו אחד את השני עבור אותם הפיקסלים</li>
 </ol>
-
+<figure>
+    <img src='images/sampling.png' alt='missing' />
+</figcaption>
 
 </div>
