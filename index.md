@@ -2,11 +2,11 @@
 title: "Let's Build Together a Computer Vision Library!"
 ---
 
-<div dir="rtl">
 <h1 align="center">ברוכים הבאים לבלוג <br>
 <b><u>
 "Let's Build Together a Computer Vision and Image processing Library!"
 </u></b></h1>
+<div dir="rtl">
 הבלוג מיועד:
 <ul>
     <li>לאנשים וסטודנטים שמאוד אוהבים מתמטיקה ומאוד אוהבים קוד.</li>
