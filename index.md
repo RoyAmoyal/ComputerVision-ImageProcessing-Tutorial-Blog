@@ -30,7 +30,7 @@ C++
 Python.
 <br>
 <br>
-<h1 align="center"><b>״בהצלחה לנו!״</b></h1>
+<h1 align="center"><b>בהצלחה לנו!</b></h1>
 </div>
 
 
