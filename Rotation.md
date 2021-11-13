@@ -230,7 +230,7 @@ OpenCV
 <br>
 אם ניזכר בתכונות מטריצת הסיבוב שציינו בתחילת הבלוג, נשים לב שהמטריצה היא מטריצה אורתוגונלית ולכן המטריצה המשוחלפת שלה שווה למטריצה ההופכית כלומר:
 <br>
-<img src='images/reverseRotation.png' style="width: 20%; height: auto;"/> <br>
+<img src='images/reverseRotation.png' style="width: 40%; height: auto;"/> <br>
 <b> כמו קודם נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
 {% highlight c++%}
@@ -448,7 +448,7 @@ int main() {
     cv::imshow("Original Image",img);
     cv::imshow("Rotated Image",rotatedImage);
     cv::waitKey(0);
-
+}
 {% endhighlight %}
 </div><br>
 
@@ -470,7 +470,9 @@ int main() {
 </figure>
 
 
-
+<br>
+<br>
+אינטרפולציה הקיוביק:
 
 
 
