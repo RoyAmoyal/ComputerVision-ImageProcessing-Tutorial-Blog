@@ -41,7 +41,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <br>
 <figure>
     <img src='images/sampling3.png' alt='missing' />
-    <figcaption> 
+    <figcaption align="center"> 
     ביצוע דגימת הצבע מפיקסל
     (u,v)
     עבור הפיקסל לאחר העיגול
