@@ -75,6 +75,8 @@ li span { font-weight: normal; }
 <br>
 התוצאה שקיבלנו שם:
 <br>
-<img src='images/badlion.png' style="width: 70%; height: auto;"/> <br>
+<figure>
+<img src='images/badlion.png' style="width: 60%; height: auto;"/> <br>
+</figure>
 
 </div>
