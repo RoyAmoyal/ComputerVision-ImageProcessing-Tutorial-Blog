@@ -33,6 +33,10 @@ Python.
 <br>
 
 <h1 align="center"><b>בהצלחה לנו!</b></h1>
+
+<img src='images/introOpticalflowLK.jpeg' style="width: 70%; height: auto;"/> 
+<img src='images/introFeatureMatching.png' style="width: 70%; height: auto;"/> 
+
 </div>
 
 
