@@ -21,7 +21,7 @@ title: "Let's Build Together a Computer Vision Library!"
 </head>
 
 <div dir="rtl">
-   <h1 align=center>Affine Transformations</h1>
+   <h1 align="center">Affine Transformations</h1>
   <h2> Image Rotation </h2> 
     אז בחלק הזה נלמד איך לעשות רוטציות לתמונה. ראשית אציג את הדרך הנאיבית בה היווצרו חורים בתמונה (בשל הזזת הפיקסלים) ולאחר מכן נפתור את הבעייה באמצעות שימוש באינטרפולציה שעליה פירטתי בהרחבה בפוסט הבא <a href="interpolation.md">interpolation</a>. <br> 
     <b>בחלק הבונוס:</b>
@@ -230,7 +230,7 @@ OpenCV
 <br>
 אם ניזכר בתכונות מטריצת הסיבוב שציינו בתחילת הבלוג, נשים לב שהמטריצה היא מטריצה אורתוגונלית ולכן המטריצה המשוחלפת שלה שווה למטריצה ההופכית כלומר:
 <br>
-<img src='images/reverseRotation.png' style="width: 40%; height: auto;"/> <br>
+<img align = "center" src='images/reverseRotation.png' style="width: 40%; height: auto;"/> <br>
 <b> כמו קודם נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
 {% highlight c++%}
