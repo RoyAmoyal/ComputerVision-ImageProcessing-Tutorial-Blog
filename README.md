@@ -1,5 +1,7 @@
 # ComputerVisionRoy-sBlog
 
-## Introduction to Image Processing
 
-אז בחלק הזה נלמד איך 
+ברוכים הבאים לבלוג שלי
+לקישור:
+
+https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/
