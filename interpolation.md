@@ -150,7 +150,44 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <h3><u><b>אינטרפולציה לשכן הקרוב ביותר
             (Nearest Neighbor Interpolation)</b></u></h3>
+השיטה הזאת היא הקלה ביותר, והיא מניבה תוצאה לא רעה (אך לא בהכרח הכי איכותית).
+לכל פיקסל בתמונת היעד, כאשר נפעיל עבורו את הטרנספורמציה ההפוכה לתמונת המקור, נבחר לקחת דגימה מהפיקסל שהכי קרוב לערכים בהם ״נפלנו״. (נבצע עיגול לערכים)
+<br>
+כלומר אם נפלנו בערכים 
+(7.49,8.67) 
+נבחר לקחת את ערך הפיקסל 
+(7,9).
 
+<figure>
+<img src='images/nearestNeighborInterpolation.png' style="width: 70%; height: auto;"/> <br>
+</figure>
+
+
+<div dir="ltr">
+{% highlight c++%}
+
+void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+    // Find Nearest Neighbor
+    int NearestNeighborX = (int) round(srcPoint.x);
+    int NearestNeighborY = (int) round(srcPoint.y);
+    cv::Point NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
+    if (src.channels() > 1)
+    { //RGB image
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<cv::Vec3b>(dstPixel) = 0;
+        else
+            dst.at<cv::Vec3b>(dstPixel) = src.at<cv::Vec3b>(NearestNeighborPixel);
+    }
+    else// GrayScale Image
+    {
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<uchar>(dstPixel) = 0;
+        else
+            dst.at<uchar>(dstPixel) = src.at<uchar>(NearestNeighborPixel);
+    }
+}
+</div>
 
 
 </div>
