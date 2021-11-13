@@ -34,8 +34,8 @@ Python.
 
 <h1 align="center"><b>בהצלחה לנו!</b></h1>
 
-<img src='images/introOpticalflowLK.jpeg' style="width: 45%; height: auto;"/> 
-<img src='images/introFeatureMatching.png' style="width: 55%; height: auto;"/> 
+<img src='images/introOpticalflowLK.jpeg' style="width: 43%; height: auto;"/> 
+<img src='images/introFeatureMatching.png' style="width: 53%; height: auto;"/> 
 
 </div>
 
