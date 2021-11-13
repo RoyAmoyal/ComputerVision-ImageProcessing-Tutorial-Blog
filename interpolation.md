@@ -55,7 +55,6 @@ title: "Let's Build Together a Computer Vision Library!"
     (3,5).
       </figcaption>
 </figure>
-<br>
 <h3><b><u>אז איפה למעשה קוראת בעיית הדגימה ולמה היא אינה מספקת אותנו ואינה יעילה?</u></b></h3> 
 מכיוון שבכל חישוב לכל פיקסל יש צורך לעגל את התוצאה למרכזי הפיקסלים בתמונת היעד נקבל 2 תרחישים אינם רצויים:
 <ol style="font-weight: bold;">
