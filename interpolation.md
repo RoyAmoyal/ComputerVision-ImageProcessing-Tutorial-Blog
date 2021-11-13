@@ -70,4 +70,8 @@ li span { font-weight: normal; }
     <img src='images/sampling.png' alt='missing' style="width: 90%; height: auto;" />
 </figure>
 
+דוגמה מוחשית לעניין ומימוש נאיבי תוכלו למצוא בתחילת
+<a href="Rotation.md"> המדריך לרוטציה של תמונות.</a>
+
+
 </div>
