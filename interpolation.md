@@ -6,7 +6,7 @@ title: "Let's Build Together a Computer Vision Library!"
 .centerImage {
   display: block;
   margin-left: 20%;
-  margin-right: auto;
+  margin-right: 20%;
 }
 </style>
 </head>
@@ -92,7 +92,7 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <figure>
     <img src='images/exampleLinearInterpolation.png' alt='missing' style="width: 80%; height: auto;" class="centerImage"/>
-        <figcaption align="center"> 
+        <figcaption> 
         שחזור הפונקציה על סמך הנקודות האדומות הידועות לנו בשימוש בשיטה הנקראת ״אינטרפולציה לינארית״
         </figcaption>
 </figure>
