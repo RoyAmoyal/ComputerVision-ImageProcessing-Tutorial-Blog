@@ -40,7 +40,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <b> בתמונת המקור. </b>
 <br>
 <figure>
-    <img src='sampling2.png' alt='missing' />
+    <img src='images/sampling2.png' alt='missing' />
     <figcaption> ביצוע דגימת הצבע מפיקסל 
     (u,v)
     עבור הפיקסל 
