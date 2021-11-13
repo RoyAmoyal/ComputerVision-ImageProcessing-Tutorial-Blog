@@ -97,7 +97,7 @@ title: "Let's Build Together a Computer Vision Library!"
         </figcaption>
 </figure>
 
-<h3><u><b>הגדרה לאינטרפולציה בעיבוד תמונה:</b></u></h3>
+<h2><u><b>הגדרה לאינטרפולציה בעיבוד תמונה:</b></u></h2>
 בעיבוד תמונה
 זוהי טכניקה להקצות ערכים לפיקסלים בתמונות על בסיס 
 הפיקסלים הסמוכים למיקום הדגימה שאינו בהכרח מותאם למיקומי התמונה התקינים.
@@ -114,6 +114,12 @@ title: "Let's Build Together a Computer Vision Library!"
     <li>מכיוון שאנחנו עוברים פיקסל-פיקסל בתמונת היעד שלנו, אנחנו פותרים באופן טבעי את עניין התמונה המחוררת, כי אין מצב בו פספסנו דגימה עבור פיקסל. </li>
     <li>פתרנו גם את עניין הדגימה הכפולה עבור פיקסל בתמונת היעד, מכיוון שאנחנו דוגמים עבורו פעם אחת ויחידה את הצבע מהתמונה המקורית</li>
 </ol>
+
+<figure>
+<img src='images/inverse_mapping.png' style="width: 70%; height: auto;"/> <br>
+</figure>
+
+
  <br><br>
  איך זה קורה בפועל?
  <b>
@@ -142,6 +148,8 @@ title: "Let's Build Together a Computer Vision Library!"
 </ol>
     
 
+<h3><u><b>אינטרפולציה לשכן הקרוב ביותר
+            (Nearest Neighbor Interpolation)</b></u></h3>
 
 
 
