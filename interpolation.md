@@ -88,9 +88,10 @@ li span { font-weight: normal; }
 
  <br><br>
  איך זה עוזר לנו בעצם לפתור את בעיית הSpatial Aliasing?
- <br>
+ <br><br>
+ <b>
 נפעל ע״י האלגוריתם הבא:
-
+</b>
  <ol>
     <li>נחשב את הטרנספורמציה ההפוכה לפעולה שאנחנו רוצים לבצע לתמונה.
         <ul>
@@ -113,9 +114,6 @@ li span { font-weight: normal; }
     </li>
 </ol>
     
-        </ul>
-    </li>
-      
 
 
 
