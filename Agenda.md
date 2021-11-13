@@ -1,6 +1,17 @@
 ---
 title: "Let's Build Together a Computer Vision Library!"
 ---
+<head>
+<style>
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+
+
 <div dir="rtl">
 <h1 align="center"><b><u>Personal Agenda</u></b></h1>
 <div align="center" style="font-size: 150%">
@@ -17,6 +28,10 @@ title: "Let's Build Together a Computer Vision Library!"
 בנוסף, זו הזדמנות מעולה להראות למעסיקים, מראיינים ומנחים עתידיים באוניברסיטה את כמות התשוקה שלי לתחום, הסקרנות והרעב שלי להתפתח וללמוד.
 </u>
 <br>
+
+<img src='images/theVeryBest.jpeg' style="width: 40%; height: auto;" class="centerImage"/> 
+<br>
+
 <h1 align="center"><b><u>Blog Agenda</u></b></h1>
 המטרה העיקרית של הבלוג היא לספק מידע נגיש, ומעמיק לכל אדם ובפרט לסטודנטים, שרוצים להעמיק את הידע שלהם בתחום הראייה הממוחשבת. בחרתי לעשות זאת בעברית, גם כדי להאיץ את קצב כתיבת הבלוג שלי, גם כדי לשמור על ייחודיות הבלוג (למרות שאני בטוח שתתקשו למצוא מידע כזה מונגש עם קוד אותנטי על כל אלגוריתם ואלגוריתם גם באנגלית) ובמיוחד כדי להקל על סטודנטים להיכנס לתחום מבלי לפחד מאנגלית ומהמושגים החדשים.
 <br>
