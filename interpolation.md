@@ -6,7 +6,7 @@ title: "Let's Build Together a Computer Vision Library!"
 .centerImage {
   display: block;
   margin-left: 120%;
-  margin-right: auto;
+  margin-right: 10%;
 }
 </style>
 </head>
