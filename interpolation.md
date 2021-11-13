@@ -71,7 +71,7 @@ li span { font-weight: normal; }
 </figure>
 
 דוגמה מוחשית לעניין ומימוש נאיבי תוכלו למצוא בתחילת
-<a href="Rotation.md"> המדריך לרוטציה של תמונות.</a>
+<a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/Rotation.html"> המדריך לרוטציה של תמונות.</a>
 <br>
 התוצאה שקיבלנו שם:
 <br>
