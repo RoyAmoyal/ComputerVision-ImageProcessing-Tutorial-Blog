@@ -72,6 +72,9 @@ li span { font-weight: normal; }
 
 דוגמה מוחשית לעניין ומימוש נאיבי תוכלו למצוא בתחילת
 <a href="Rotation.md"> המדריך לרוטציה של תמונות.</a>
-
+<br>
+התוצאה שקיבלנו שם:
+<br>
+<img src='images/badlion.png' style="width: 70%; height: auto;"/> <br>
 
 </div>
