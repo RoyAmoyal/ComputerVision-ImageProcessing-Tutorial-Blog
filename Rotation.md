@@ -234,7 +234,9 @@ OpenCV
 <br>
 אם ניזכר בתכונות מטריצת הסיבוב שציינו בתחילת הבלוג, נשים לב שהמטריצה היא מטריצה אורתוגונלית ולכן המטריצה המשוחלפת שלה שווה למטריצה ההופכית כלומר:
 <br>
+<figure>
 <img src='images/reverseRotation.png' style="width: 40%; height: auto;" class="centerImage"/> <br>
+</figure>
 <b> כמו קודם נייבא את הספריות הדרושות לנו: </b>
 <div dir="ltr">
 {% highlight c++%}
