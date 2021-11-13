@@ -34,10 +34,19 @@ title: "Let's Build Together a Computer Vision Library!"
 <br><br>
 במילים אחרות, דגמנו עבור הפיקסל
 (3,5)
-בתמונת היעד את ערכו של הפיקסל
+<b> בתמונת היעד </b>
+את ערכו של הפיקסל
 (5,3)
-בתמונת המקור.
+<b> בתמונת המקור. </b>
 <br>
+<figure>
+    <img src='sampling.png2' alt='missing' />
+    <figcaption> ביצוע דגימת הצבע מפיקסל 
+    (u,v)
+    עבור הפיקסל 
+    (x,y)
+      </figcaption>
+</figure>
 <br>
 אז איפה למעשה קוראת בעיית הדגימה ולמה היא אינה מספקת אותנו או יעילה? 
 
