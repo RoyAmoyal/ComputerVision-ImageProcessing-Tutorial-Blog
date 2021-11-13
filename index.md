@@ -4,7 +4,7 @@ title: "Let's Build Together a Computer Vision Library!"
 
 <div dir="rtl">
 <h1 align="center"><b> ברוכים הבאים לבלוג </b></h1>
-<h1 align="center"><b><u>״בואו נבנה יחד ספריית ראייה ממוחשבת ועיבוד תמונה״</u><</b>/h1>
+<h1 align="center"><b><u>״בואו נבנה יחד ספריית ראייה ממוחשבת ועיבוד תמונה״</u></b></h1>
 הבלוג מיועד:
 <ul>
     <li>לאנשים וסטודנטים שמאוד אוהבים מתמטיקה ומאוד אוהבים קוד.</li>
