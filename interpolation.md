@@ -187,6 +187,8 @@ void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, cons
             dst.at<uchar>(dstPixel) = src.at<uchar>(NearestNeighborPixel);
     }
 }
+{% endhighlight %}
+
 </div>
 
 
