@@ -63,7 +63,7 @@ title: "Let's Build Together a Computer Vision Library!"
     <li>יהיו פיקסלים שנדגום להם פעמיים צבע מתמונת המקור ולכן ערכים ידרסו אחד את השני עבור אותם הפיקסלים</li>
 </ol>
 <figure>
-    <img src='images/sampling.png' alt='missing' />
+    <img src='images/sampling.png' alt='missing' style="width: 90%; height: auto;" />
 </figcaption>
 
 </div>
