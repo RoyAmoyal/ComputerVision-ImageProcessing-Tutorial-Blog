@@ -79,7 +79,7 @@ li span { font-weight: normal; }
 <img src='images/badlion.png' style="width: 70%; height: auto;"/> <br>
 </figure>
 
-<h1 align="center"><b><u> פתרון ה-Interpolation </b></u></h1>
+<h1 align="center"><b><u> פתרון ה-Interpolation </u></b></h1>
 אינטרפולציה היא שיטת ״הערכה״ בתחום האנליזה נומרית, שהרעיון המרכזי מאחוריה, היא למעשה למצוא נקודות מידע חדשות המבוססות על טווח של סט בדיד של נקודות ידועות.
 <br>
 <br>
