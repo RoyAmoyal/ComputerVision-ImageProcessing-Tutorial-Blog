@@ -64,6 +64,6 @@ title: "Let's Build Together a Computer Vision Library!"
 </ol>
 <figure>
     <img src='images/sampling.png' alt='missing' style="width: 90%; height: auto;" />
-</figcaption>
+</figure>
 
 </div>
