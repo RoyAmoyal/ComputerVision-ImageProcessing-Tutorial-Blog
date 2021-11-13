@@ -1,6 +1,11 @@
 ---
 title: "Let's Build Together a Computer Vision Library!"
 ---
+<head>
+<style>
+li span { font-weight: normal; }
+</style>
+</head>
 
 <div dir="rtl">
 <h1>בעיית ״קיפולי התדר״ - The Spatial Aliasing Problem </h1>
