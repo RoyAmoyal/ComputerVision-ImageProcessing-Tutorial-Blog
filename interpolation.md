@@ -40,7 +40,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <b> בתמונת המקור. </b>
 
 <figure>
-    <img src='images/sampling3.png' alt='missing' />
+    <img src='images/samplingß.png' alt='missing' />
     <figcaption align="center"> 
     ביצוע דגימת הצבע מפיקסל
     (u,v)
@@ -51,8 +51,8 @@ title: "Let's Build Together a Computer Vision Library!"
     שקיבלנו מהטרנספורמציה.
     <br>
     ממש כמו בדוגמה קודם, כאשר שהערכים שקיבלנו מהטרנספורמציה לפיקסל היעד היו (2.83,5.09)
-    אך עיגלנו אותם למרכז הפיקסל הקרוב שערכיו הוא
-    (3,5)
+    אך עיגלנו אותם למרכז הפיקסל הקרוב שערכיו הם
+    (3,5).
       </figcaption>
 </figure>
 <br>
