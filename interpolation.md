@@ -3,7 +3,11 @@ title: "Let's Build Together a Computer Vision Library!"
 ---
 <head>
 <style>
-li span { font-weight: normal; }
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
 
@@ -87,7 +91,7 @@ li span { font-weight: normal; }
  למעשה באמצעות שיטת האינטרפולציה נוכל לנסות לשחזר את הפונקציה, או לתת הערכה לנקודות אחרות שהיינו מקבלים ע״י הפונקציה הלא ידועה, על סמך הנקודות הידועות לנו.
 
 <figure>
-    <img src='images/exampleLinearInterpolation.png' alt='missing' style="width: 80%; height: auto;"/>
+    <img src='images/exampleLinearInterpolation.png' alt='missing' style="width: 80%; height: auto;" class="centerImage"/>
         <figcaption align="center"> 
         שחזור הפונקציה על סמך הנקודות האדומות הידועות לנו בשימוש בשיטה הנקראת ״אינטרפולציה לינארית״
         </figcaption>
