@@ -40,12 +40,13 @@ title: "Let's Build Together a Computer Vision Library!"
 <b> בתמונת המקור. </b>
 <br>
 <figure>
-    <img src='images/sampling2.png' alt='missing' />
+    <img src='images/sampling3.png' alt='missing' />
     <figcaption> 
-                    ביצוע דגימת הצבע מפיקסל
+    ביצוע דגימת הצבע מפיקסל
     (u,v)
-    עבור הפיקסל 
-    (x,y)
+    עבור הפיקסל לאחר העיגול
+    (round(x),round(y)).
+    כפי שניתן לראות הטרנספומציה לאו דווקא הנחיתה אותנו במרכז הפיקסל ולכן יש צורך בעיגול כפי שהסברתי בדוגמה קודם.
       </figcaption>
 </figure>
 <br>
