@@ -3,7 +3,7 @@ title: "Let's Build Together a Computer Vision Library!"
 ---
 <div dir="rtl">
 <h1 align="center"><b><u>Personal Agenda</u></b></h1>
-<div align="center" style="font-size: 150%>
+<div align="center" style="font-size: 150%">
 <b>
 ״כשמסבירים דברים מסובכים לאדם אחר, צריך קודם להבין אותם בצורה הכי טובה בעצמך״ 
 </b>
