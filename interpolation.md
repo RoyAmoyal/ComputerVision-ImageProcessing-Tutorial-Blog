@@ -38,7 +38,7 @@ title: "Let's Build Together a Computer Vision Library!"
 את ערכו של הפיקסל
 (5,3)
 <b> בתמונת המקור. </b>
-<br>
+
 <figure>
     <img src='images/sampling3.png' alt='missing' />
     <figcaption align="center"> 
