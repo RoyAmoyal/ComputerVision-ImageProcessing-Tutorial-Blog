@@ -5,7 +5,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <div dir="rtl">
 <h1 align="center">ברוכים הבאים לבלוג <br>
 <b><u>
-״בואו נבנה יחד ספריית ראייה ממוחשבת ועיבוד תמונה״
+"Let's Build Together a Computer Vision and Image processing Library!"
 </u></b></h1>
 הבלוג מיועד:
 <ul>
