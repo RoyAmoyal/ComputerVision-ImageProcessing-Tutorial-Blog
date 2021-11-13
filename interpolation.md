@@ -5,7 +5,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <style>
 .centerImage {
   display: block;
-  margin-left: 20%;
+  margin-left: auto;
   margin-right: 20%;
 }
 </style>
@@ -102,7 +102,7 @@ title: "Let's Build Together a Computer Vision Library!"
  איך זה עוזר לנו בעצם לפתור את בעיית הSpatial Aliasing?
  <br><br>
  <b>
-נפעל ע״י האלגוריתם הבא:
+נפעל על פי האלגוריתם הבא:
 </b>
  <ol>
     <li>נחשב את הטרנספורמציה ההפוכה לפעולה שאנחנו רוצים לבצע לתמונה.
