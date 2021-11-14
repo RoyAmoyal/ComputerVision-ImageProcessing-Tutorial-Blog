@@ -218,7 +218,7 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 <br>
 נעגל את נקודת הנפילה, לפיקסל הקרוב ביותר (לו נקרא ״השכן הקרוב ביותר).
 
-<div dir="rtl">
+<div dir="ltr">
 {% highlight c++%}
 
  if (src.channels() > 1)
@@ -250,4 +250,20 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
     <li>אם ערכי הפיקסל של השכן הקרוב ביןתר חצו את גבולות התמונה, נסיק כי הפיקסל בתמונת היעד צריך לקבל את הערך שחור מכיוון שהדגימה שלו אינה נמצאת בגבולות התמונה. (אחרת נבצע השמה במעגלים שתשבש לנו את התוצאה הרצוייה)
     </li>
 </ul>
+
+
+<h3><u><b>אינטרפולציה לינארית
+            (BiLinear Interpolation)</b></u></h3>
+בשיטה הזאת נקבל תוצאה איכותית יותר מאינטרפולצית השכן הקרוב ביותר.
+<br>
+למעשה, בשיטה זו נקח את ה-4 שכנים הקרובים ביותר לפיקסל וניקח מכל אחד מהם דגימה יחסית, לפי המרחק שלהם מ״נקודת הנפילה״ מהטרנספורמציה ההפוכה.
+
+<figure>
+<img src='images/linearInterpolation.png' style="width: 70%; height: auto;"/> <br>
+</figure>
+
+
+
+
+
 </div>
