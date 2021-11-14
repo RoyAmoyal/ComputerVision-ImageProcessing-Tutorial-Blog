@@ -258,9 +258,15 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 <br>
 למעשה, בשיטה זו נקח את ה-4 שכנים הקרובים ביותר לפיקסל וניקח מכל אחד מהם דגימה יחסית, לפי המרחק שלהם מ״נקודת הנפילה״ מהטרנספורמציה ההפוכה.
 
+
 <figure>
-<img src='images/linearInterpolation.png' style="width: 70%; height: auto;"/> <br>
+<img src='images/LinearInterpolation.png' style="width: 70%; height: auto;"/> <br>
 </figure>
+
+<figure>
+<img src='images/LinearInterpolationEquation.png' style="width: 90%; height: auto;"/> <br>
+</figure>
+
 
 
 
