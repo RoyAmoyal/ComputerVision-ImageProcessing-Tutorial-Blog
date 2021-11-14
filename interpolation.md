@@ -265,11 +265,11 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 
 
 <figure>
-<img src='images/LinearInterpolation.png' style="width: 70%; height: auto;"/> <br>
+<img src='images/LinearInterpolation.png' style="width: 70%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
 <figure>
-<img src='images/LinearInterpolationEquation.png' style="width: 90%; height: auto;" class=centerImage2/> <br>
+<img src='images/LinearInterpolationEquation.png' style="width: 90%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
 
