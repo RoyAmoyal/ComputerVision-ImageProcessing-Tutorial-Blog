@@ -171,7 +171,7 @@ void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, cons
     // Find Nearest Neighbor
     int NearestNeighborX = (int) round(srcPoint.x);
     int NearestNeighborY = (int) round(srcPoint.y);
-    cv::Point NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
+    cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
     if (src.channels() > 1)
     { //RGB image
         if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
@@ -190,6 +190,64 @@ void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, cons
 {% endhighlight %}
 
 </div>
+<br>
+הסבר לקוד:
+<div dir="ltr">
+{% highlight c++%}
+void NearestNeighbor_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel)
+{% endhighlight %}
+</div>
+<br>
 
+הפונקציה שלנו תקבלת את:
+<ol>
+    <li>const cv::Mat& src - תמונת המקור ממנה נבצע את המקור </li>
+    <li>cv::Mat& dst - תמונת היעד, שבא תאוחסן התוצאה </li>
+    <li>const cv::Point2d& srcPoint - נקודת ״הנפילה״ מהטרנספורמציה ההפוכה שלה שממנה נבחר את הפיקסל הקרוב ביותר לביצוע הדגימה</li>
+    <li>const cv::Point2i& dstPixel - הפיקסל ממנו ביצענו את הטרנספורמציה ההופכה, ולכן הוא יקבלל את ערך הדגימה</li>
+</ol>
+<br>
 
+<div dir="ltr">
+{% highlight c++%}
+int NearestNeighborX = (int) round(srcPoint.x);
+int NearestNeighborY = (int) round(srcPoint.y);
+cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
+{% endhighlight %}
+</div>
+<br>
+נעגל את נקודת הנפילה, לפיקסל הקרוב ביותר (לו נקרא ״השכן הקרוב ביותר).
+
+<div dir="rtl">
+{% highlight c++%}
+
+ if (src.channels() > 1)
+    { //RGB image
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<cv::Vec3b>(dstPixel) = 0;
+        else
+            dst.at<cv::Vec3b>(dstPixel) = src.at<cv::Vec3b>(NearestNeighborPixel);
+    }
+    else// GrayScale Image
+    {
+        if (NearestNeighborPixel.x < 0 || NearestNeighborPixel.x > src.cols - 1 || NearestNeighborPixel.y < 0 || NearestNeighborPixel.y > src.rows - 1)
+            dst.at<uchar>(dstPixel) = 0;
+        else
+            dst.at<uchar>(dstPixel) = src.at<uchar>(NearestNeighborPixel);
+    }
+{% endhighlight %}
+</div>
+<br>
+לבסוף נבדוק 2 דברים רגע לפני ההשמה: (לא אחזור על ההסבר בשיטות הבאות)
+<ul>
+    <li>אם התמונה היא 
+        Grayscale
+        כל פיקסל מכיל ערך אחד ויחיד ולכן נשתמש ב
+        uchar.
+        אחרת, כל פיקסל מכיל וקטור שבו יש שלושה ערכים, אדום,ירוק וכחול (או בסדר אחר) ולכן יש נשתמש בוקטור בעל 3 ערכים, 
+        Vec3b.
+     </li>
+    <li>אם ערכי הפיקסל של השכן הקרוב ביןתר חצו את גבולות התמונה, נסיק כי הפיקסל בתמונת היעד צריך לקבל את הערך שחור מכיוון שהדגימה שלו אינה נמצאת בגבולות התמונה. (אחרת נבצע השמה במעגלים שתשבש לנו את התוצאה הרצוייה)
+    </li>
+</ul>
 </div>
