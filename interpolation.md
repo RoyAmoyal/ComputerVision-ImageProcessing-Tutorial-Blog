@@ -8,6 +8,11 @@ title: "Let's Build Together a Computer Vision Library!"
   margin-left: auto;
   margin-right: 11%;
 }
+.centerImage2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
 
@@ -264,7 +269,7 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 </figure>
 
 <figure>
-<img src='images/LinearInterpolationEquation.png' style="width: 90%; height: auto;"/> <br>
+<img src='images/LinearInterpolationEquation.png' style="width: 90%; height: auto;" class=centerImage2/> <br>
 </figure>
 
 
