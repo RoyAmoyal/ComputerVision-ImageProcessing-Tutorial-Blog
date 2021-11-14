@@ -269,7 +269,7 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 </figure>
 
 <figure>
-<img src='images/LinearEquationInterpolation.png' style="width: 90%; height: auto;" class="centerImage2"/> <br>
+<img src='images/LinearEquationInterpolation.png' style="width: 120%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
 
