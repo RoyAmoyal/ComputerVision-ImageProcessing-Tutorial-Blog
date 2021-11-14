@@ -27,7 +27,7 @@ title: "Let's Build Together a Computer Vision Library!"
 <div dir="rtl">
    <h1 align="center">Affine Transformations</h1>
   <h2> Image Rotation </h2> 
-    אז בחלק הזה נלמד איך לעשות רוטציות לתמונה. ראשית אציג את הדרך הנאיבית בה היווצרו חורים בתמונה (בשל הזזת הפיקסלים) ולאחר מכן נפתור את הבעייה באמצעות שימוש באינטרפולציה שעליה פירטתי בהרחבה בפוסט הבא <a href="interpolation.md">interpolation</a>. <br> 
+    אז בחלק הזה נלמד איך לעשות רוטציות לתמונה. ראשית אציג את הדרך הנאיבית בה היווצרו חורים בתמונה (בשל הזזת הפיקסלים) ולאחר מכן נפתור את הבעייה באמצעות שימוש באינטרפולציה שעליה פירטתי בהרחבה בפוסט הבא <a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/interpolation.html">interpolation</a>. <br> 
     <b>בחלק הבונוס:</b>
     נלמד איך לבצע את הרוטציה ע״י ממרכז התמונה על ידי שינוי ראשית הצירים שבדיפולט נמצאת בפינה השמאלית העליונה של התמונה.
       
@@ -232,7 +232,7 @@ OpenCV
 <br>
 <h3>
 כעת נפתור את הבעיה באמצעות
-<a href="interpolation.md">אינטרפולציה</a>
+<a href="https://royamoyal.github.io/ComputerVision-ImageProcessing-Tutorial-Blog/interpolation.html">אינטרפולציה</a>
 </h3>
 <br>
 כדי לבצע אינטרפולציה, נצטרך את הטרנספורמציה ההופכית, כלומר את המטריצה ההופכית למטריצת הסיבוב שלנו.
