@@ -272,7 +272,8 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 <img src='images/LinearInterpolationEquation2.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
-<b><u>הקוד בהתאם לנוסחה:</u></b>
+<b><u>הקוד בהתאם לנוסחה עבור 
+GrayScale</u></b>
 
 <div dir="ltr">
 {% highlight c++%}
