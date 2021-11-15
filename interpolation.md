@@ -269,7 +269,11 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 </figure>
 <b><u>הנוסחה:</u></b>
 <figure>
-<img src='images/LinearInterpolationEquationUpdated.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
+<img src='images/LinearInterpolationEquation1.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
+</figure>
+<b><u>כלומר נקבל:</u></b>
+<figure>
+<img src='images/LinearInterpolationEquation2.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
 <b><u>הקוד בהתאם לנוסחה עבור 
