@@ -258,7 +258,7 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 
 
 <h3><u><b>אינטרפולציה לינארית
-            (BiLinear Interpolation)</b></u></h3>
+            (Bi-Linear Interpolation)</b></u></h3>
 בשיטה הזאת נקבל תוצאה איכותית יותר מאינטרפולצית השכן הקרוב ביותר.
 <br>
 למעשה, בשיטה זו נקח את ה-4 שכנים הקרובים ביותר לפיקסל וניקח מכל אחד מהם דגימה יחסית, לפי המרחק שלהם מ״נקודת הנפילה״ מהטרנספורמציה ההפוכה.
@@ -370,6 +370,6 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 }
 {% endhighlight %}
 
-
+<h3><u><b>אינטרפולציה קובייתית (Bi-Cubic Interpolation)</b></u></h3>
 
 </div>
