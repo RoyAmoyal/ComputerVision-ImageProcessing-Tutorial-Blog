@@ -272,9 +272,47 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 <img src='images/LinearInterpolationEquation2.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
 </figure>
 
+<b><u>הקוד בהתאם לנוסחה:</u></b>
+
+<div dir="ltr">
+{% highlight c++%}
+
+void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+    // Lets find the 4-Nearest Neighbors of our "landing" spot.
+    // (r,c),(r,c+1),(r+1,c),(r+1,c+1)
+    int leftUpperNeighborX = floor(srcPoint.x);
+    int leftUpperNeighborY = floor(srcPoint.y);
+    // (r,c)
+    cv::Point2i leftUpperNeighbor(leftUpperNeighborX, leftUpperNeighborY);
+    // (r,c+1)
+    cv::Point2i leftBottomNeighbor(leftUpperNeighborX, leftUpperNeighborY + 1);
+    // (r+1,c)
+    cv::Point2i rightUpperNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY);
+    // (r+1,c+1)
+    cv::Point2i rightBottomNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY + 1);
+
+    // ratioX = Alpha , ratioY = Beta
+    // 0 <= ratioX,ratioY <= 1
+    double Alpha = srcPoint.x - (double) leftUpperNeighborX;
+    double Beta = srcPoint.y - (double) leftUpperNeighborY;
+
+    if (leftUpperNeighbor.x < 0 || leftUpperNeighbor.x > src.cols - 1 || leftUpperNeighbor.y < 0 || leftUpperNeighbor.y > src.rows - 1)
+        dst.at<uchar>(dstPixel) = 0;
+    else {
+
+        int greyValue = int((1 - Alpha) * (1 - Beta) * src.at<uchar>(leftUpperNeighbor) +
+                            (1 - Alpha) * (Beta) * src.at<uchar>(rightUpperNeighbor) +
+                            (Alpha) * (1 - Beta) * src.at<uchar>(leftBottomNeighbor) +
+                            (Alpha) * (Beta) * src.at<uchar>(rightBottomNeighbor));
+
+        dst.at<uchar>(dstPixel) = greyValue;
 
 
-
+    }
+}
+{% endhighlight %}
+</div>
 
 
 </div>
