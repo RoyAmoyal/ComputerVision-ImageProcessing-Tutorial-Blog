@@ -318,7 +318,7 @@ void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv:
 }
 {% endhighlight %}
 </div>
-
+<br>
 <b><u>הקוד בהתאם לנוסחה עבור 
 תמונות עם צבע (3 channels):</u></b>
 
