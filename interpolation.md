@@ -319,5 +319,56 @@ void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv:
 {% endhighlight %}
 </div>
 
+<b><u>הקוד בהתאם לנוסחה עבור 
+תמונות עם צבע (3 channels):</u></b>
+
+<div dir="ltr">
+{% highlight c++%}
+void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
+{
+
+    // Lets find the 4-Nearest Neighbors of our "landing" spot.
+    // (r,c),(r,c+1),(r+1,c),(r+1,c+1)
+    int leftUpperNeighborX = floor(srcPoint.x);
+    int leftUpperNeighborY = floor(srcPoint.y);
+    // (r,c)
+    cv::Point2i leftUpperNeighbor(leftUpperNeighborX, leftUpperNeighborY);
+    // (r,c+1)
+    cv::Point2i leftBottomNeighbor(leftUpperNeighborX, leftUpperNeighborY + 1);
+    // (r+1,c)
+    cv::Point2i rightUpperNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY);
+    // (r+1,c+1)
+    cv::Point2i rightBottomNeighbor(leftUpperNeighborX + 1, leftUpperNeighborY + 1);
+
+    // ratioX = Alpha , ratioY = Beta
+    // 0 <= ratioX,ratioY <= 1
+    double Alpha = srcPoint.x - (double) leftUpperNeighborX;
+    double Beta = srcPoint.y - (double) leftUpperNeighborY;
+
+    if (leftUpperNeighbor.x < 0 || leftUpperNeighbor.x >= src.cols - 1 || leftUpperNeighbor.y < 0 || leftUpperNeighbor.y >= src.rows - 1)
+        dst.at<cv::Vec3b>(dstPixel) = 0;  // ratio with the left upper neighbor
+    else {
+        int B = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[0] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[0] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[0] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[0]);
+
+        int G = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[1] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[1] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[1] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[1]);
+
+        int R = int((1 - Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftUpperNeighbor)[2] +
+                    (1 - Alpha) * (Beta) * src.at<cv::Vec3b>(rightUpperNeighbor)[2] +
+                    (Alpha) * (1 - Beta) * src.at<cv::Vec3b>(leftBottomNeighbor)[2] +
+                    (Alpha) * (Beta) * src.at<cv::Vec3b>(rightBottomNeighbor)[2]);
+
+        cv::Vec3b newVal(B, G, R);
+        dst.at<cv::Vec3b>(dstPixel) = newVal;
+    }
+}
+{% endhighlight %}
+
+
 
 </div>
