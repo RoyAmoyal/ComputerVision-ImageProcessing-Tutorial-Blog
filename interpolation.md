@@ -263,8 +263,6 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 <br>
 למעשה, בשיטה זו נקח את ה-4 שכנים הקרובים ביותר לפיקסל וניקח מכל אחד מהם דגימה יחסית, לפי המרחק שלהם מ״נקודת הנפילה״ מהטרנספורמציה ההפוכה.
 <br>
-<u>בדרך כלל נהוג לקחת את השכן השמאלי העליון כ״רצפת״ הערכים של נקודת ״הנפילה״/נחיתה, ואז את השלושה השכנים האחרים בהתאמה.</u>
-<br>
 <br>
 נרצה לתת פיקסל הקרוב יותר לנקודת הנחיתה (מ-4 השכנים), את המרחק הגדול יותר כיחס הצבע שנקח ממנו (״האחוז" בשבר מהערך שנקח ממנו״), כלומר לא המרחק ממנו אל נקודת הנחיתה, אלא את המרחק מהפיקסל המקביל עליו בציר ה-
 x 
@@ -278,8 +276,12 @@ y.
 <br>
 <br>
 <figure>
-<img src='images/LinearInterpolation2.png' style="width: 52%; height: auto;" class="centerImage2"/> <br>
+<img src='images/LinearInterpolation2.png' style="width: 52%; height: auto;" class="centerImage2"/> 
+ <figcaption align="center"> 
+בדרך כלל נהוג לקחת את השכן השמאלי העליון כ״רצפת״ הערכים של נקודת ״הנפילה״/נחיתה, ואז את השלושה השכנים האחרים בהתאמה.
+</figcaption>
 </figure>
+<br>
 <b><u>הנוסחה:</u></b>
 <figure>
 <img src='images/LinearInterpolationEquation1.png' style="width: 100%; height: auto;" class="centerImage2"/> <br>
