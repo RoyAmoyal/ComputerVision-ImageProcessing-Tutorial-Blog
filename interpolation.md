@@ -273,7 +273,7 @@ cv::Point2i NearestNeighborPixel(NearestNeighborX,NearestNeighborY);
 </figure>
 
 <b><u>הקוד בהתאם לנוסחה עבור 
-GrayScale</u></b>
+GrayScale:</u></b>
 
 <div dir="ltr">
 {% highlight c++%}
