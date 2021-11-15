@@ -303,9 +303,9 @@ void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv:
     else {
 
         int greyValue = int((1 - Alpha) * (1 - Beta) * src.at<uchar>(leftUpperNeighbor) +
-                            (1 - Alpha) * (Beta) * src.at<uchar>(rightUpperNeighbor) +
-                            (Alpha) * (1 - Beta) * src.at<uchar>(leftBottomNeighbor) +
-                            (Alpha) * (Beta) * src.at<uchar>(rightBottomNeighbor));
+                            (Alpha) * (1 - Beta) * src.at<uchar>(rightUpperNeighbor) +
+                            (1 - Alpha) * (Beta) * src.at<uchar>(leftBottomNeighbor) +
+                            (1 - Alpha) * (1 - Beta) * src.at<uchar>(rightBottomNeighbor));
 
         dst.at<uchar>(dstPixel) = greyValue;
 
