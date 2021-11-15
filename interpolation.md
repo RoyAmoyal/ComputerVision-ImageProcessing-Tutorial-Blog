@@ -321,7 +321,8 @@ void Linear_Interpolation_GRAYHelper(const cv::Mat& src, cv::Mat& dst, const cv:
 <br>
 <b><u>הקוד בהתאם לנוסחה עבור 
 תמונות עם צבע (3 channels):</u></b>
-
+<br>
+ללא ספק ניתן לבצע את הקוד בצורה יעילה יותר ע״י פונקציה שתעשה לנו את החישוב עצמו במקום חזרה על החישוב לכל צבע, אך רק לשם המחשה נשאיר כעת את הקוד כך.
 <div dir="ltr">
 {% highlight c++%}
 void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, cv::Point2i& dstPixel)
