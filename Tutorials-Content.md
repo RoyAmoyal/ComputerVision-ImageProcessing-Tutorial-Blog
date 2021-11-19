@@ -11,6 +11,7 @@ title: "Let's Build Together a Computer Vision Library!"
   gtag('config', 'UA-213391535-1');
 </script>
 </head>
+
 ## Basics for our Turotials
 - [Basics of Images, Basics methods objects of OpenCV and the topic list of the necessary math for taking these tutorials](Basics.md)
 
