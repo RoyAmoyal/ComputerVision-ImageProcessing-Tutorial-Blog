@@ -8,7 +8,6 @@ title: "Let's Build Together a Computer Vision Library!"
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-213391535-1');
 </script>
 <style>

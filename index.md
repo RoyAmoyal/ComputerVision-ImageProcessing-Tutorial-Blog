@@ -9,7 +9,6 @@ G-EN1LD17JEQ
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-213391535-1');
 </script>
 
