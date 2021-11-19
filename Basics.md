@@ -1,7 +1,17 @@
 ---
 title: "Let's Build Together a Computer Vision Library!"
 ---
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213391535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-213391535-1');
+</script>
+</head>
 
 <div dir="rtl" style="font-size:19px;">
    <h1 align=center>Basics</h1>
