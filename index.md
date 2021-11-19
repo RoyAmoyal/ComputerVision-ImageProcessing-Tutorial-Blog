@@ -3,15 +3,7 @@ title: "Let's Build Together a Computer Vision Library!"
 G-EN1LD17JEQ
 ---
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTSBXBMC79"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LTSBXBMC79');
-</script>
 </head>
 
 <h1 align="center">ברוכים הבאים לבלוג <br>

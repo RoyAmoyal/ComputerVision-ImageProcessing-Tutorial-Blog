@@ -1,6 +1,7 @@
 theme: jekyll-theme-cayman
 markdown: kramdown
 highlighter: rouge
+google_analytics: UA-2133915535-1
 
 kramdown:
   input: GFM
