@@ -423,6 +423,7 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
     <li>
 עם אותה לוגיקה, נבחר את 16 השכנים בהתאמה אם ניפול באחד מהרביעים האדומים.
     </li>
+    </ul>
 <br>
  </figcaption> 
 </figure>
