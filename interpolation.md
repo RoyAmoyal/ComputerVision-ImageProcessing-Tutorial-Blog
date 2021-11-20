@@ -436,6 +436,13 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 הנלמדת בקורס ההסתברות.
 
 <figure>
+<img src='images/cubicGaussianDraw.png' style="width: 70%; height: auto;" class="centerImage2"/>
+</figure>
+
+
+<br>
+<br>
+<figure>
 <img src='images/cubicgaussian.png' style="width: 60%; height: auto;" class="centerImage2"/>
 </figure>
 
