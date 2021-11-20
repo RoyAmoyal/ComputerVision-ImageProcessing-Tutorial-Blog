@@ -418,7 +418,7 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 <br>
  </figcaption> 
 </figure>
-
+<br>
 לאחר שנבחר את 16 השכנים, כמו באינטרפולציה הלינארית ניתן לכל שכן את היחס שמערכו לפי ציר ה
 -x
 ולפי ציר 
