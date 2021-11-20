@@ -512,15 +512,32 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
             }
         }
 
-        if (dst.channels() > 1)
-            dst.at<cv::Vec3b>(dstPixel) = cv::Vec3b((int) min(floor(sumCubicBValue),255.0), (int) min(floor(sumCubicGValue),255.0),
-                                                    (int) min(floor(sumCubicRValue),255.0));
+        if (originalImage.channels() > 1) {
+            if(sumCubicRValue>255)
+                sumCubicRValue = 255;
+            else if(sumCubicRValue < 0)
+                sumCubicRValue = 0;
+
+            if(sumCubicGValue>255)
+                sumCubicGValue = 255;
+            else if(sumCubicGValue < 0)
+                sumCubicGValue = 0;
+
+            if(sumCubicBValue>255)
+                sumCubicBValue = 255;
+            else if(sumCubicBValue < 0)
+                sumCubicBValue = 0;
+
+            outPutImageCubic.at<cv::Vec3b>(cv::Point2i(x, y)) = cv::Vec3b((int) sumCubicBValue,
+                                                                          (int)sumCubicGValue,
+                                                                          (int) sumCubicRValue);
+    }
         else {
             if(sumCubicGrayValue>255)
                 sumCubicGrayValue = 255;
             else if(sumCubicGrayValue < 0)
                 sumCubicGrayValue = 0;
-            dst.at<uchar>(dstPixel) = sumCubicGrayValue;
+            outPutImageCubic.at<uchar>(cv::Point2i(x,y)) = sumCubicGrayValue;
         }
     }
 }
