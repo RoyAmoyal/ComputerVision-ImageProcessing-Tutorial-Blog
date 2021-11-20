@@ -437,7 +437,10 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 
 <figure>
 <img src='images/cubicGaussianDraw.png' style="width: 70%; height: auto;" class="centerImage2"/>
+<img src='images/cubicGaussianFormula.png' style="width: 70%; height: auto;" class="centerImage2"/>
 </figure>
+
+
 
 
 <br>
