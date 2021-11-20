@@ -448,8 +448,27 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 <figure>
 <img src='images/cubicgaussian.png' style="width: 60%; height: auto;" class="centerImage2"/>
 </figure>
+<br>
+הנוסחה הישירה:
+<div dir="ltr">
+{% highlight c++%}
+double cubicEquationSolver(double d,double a) {
+    d = std::fabs(d);
+    if( 0.0 <= d  && d <= 1.0) {
+        double score = (a + 2.0) * pow(d, 3.0) - ((a + 3.0) * pow(d, 2.0)) + 1.0;
+        return score;
+    }
+    else if(1 < d && d <= 2) {
+        double score = a * pow(d, 3.0) - 5.0*a * pow(d, 2.0) + 8.0*a * d - 4.0*a;
+        return score;
+    }
+    else
+        return 0.0;
+}
+{% endlight %}
+</div><br>
 
-
+פונקציית האינטרפולציה שלנו:
 <div dir="ltr">
 {% highlight c++%}
 void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel) {
