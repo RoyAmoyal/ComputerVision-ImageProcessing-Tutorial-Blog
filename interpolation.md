@@ -406,9 +406,10 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 <br>
 נחלק את הפיקסל הקרוב ביותר לנקודת הנחיתה ל4 רביעים.
 (חשוב להבהיר כי בכל רביע שניפול בפיקסל עיגול הערכים יתנו את מרכז אותו הפיקסל).
+לאחר מכן בהתאם לרביע שניפול, נבחר את 16 השכנים בהתאמה. 
 <br>
-לאחר מכן בהתאם לרביע שניפול, נבחר את 16 השכנים בהתאמה.
-
+<br>
+נבהיר את אופן הבחירה על פי הדוגמה הבאה:
 <figure>
 <img src='images/16neighborscubic.png' style="width: 50%; height: auto;" class="centerImage2"/>
  <figcaption align="center"> 
