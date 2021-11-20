@@ -410,7 +410,7 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 לאחר מכן בהתאם לרביע שניפול, נבחר את 16 השכנים בהתאמה.
 
 <figure>
-<img src='images/16neighborscubic.png' style="width: 55%; height: auto;" class="centerImage2"/>
+<img src='images/16neighborscubic.png' style="width: 50%; height: auto;" class="centerImage2"/>
  <figcaption align="center"> 
 אם ניפול ברביע השמאלי העליון (הרביע הירוק) נבחר את 16 השכנים השמאליים העליונים כמו בציור. אם ניפול ברביע הימני התחתון (הרביע הצהוב) נבחר את 16 
 השכנים הימניים התחתונים.
