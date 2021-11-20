@@ -436,8 +436,8 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 הנלמדת בקורס ההסתברות.
 
 <figure>
-<img src='images/cubicGaussianDraw.png' style="width: 70%; height: auto;" class="centerImage2"/>
-<img src='images/cubicGaussianFormula.png' style="width: 70%; height: auto;" class="centerImage2"/>
+<img src='images/cubicGaussianDraw.png' style="width: 50%; height: auto;"/>
+<img src='images/cubicGaussianFormula.png' style="width: 50%; height: auto;"/>
 </figure>
 
 
@@ -450,7 +450,64 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 </figure>
 
 
+<div dir="ltr">
+{% highlight c++%}
+void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel) {
+    double newX = srcPoint.x;
+    double newY = srcPoint.y;
+    double dx = std::fabs(newX - round(newX));
+    double dy = std::fabs(newY - round(newY));
 
+    double sumCubicBValue = 0;
+    double sumCubicGValue = 0;
+    double sumCubicRValue = 0;
+    double sumCubicGrayValue = 0;
+    double uX;
+    double uY;
+
+    // if we are on the left quartets of the pixel, we want to move to the left pixel for taking the 16 neighbors, 2 columns before the original "round(newX)".
+    // that because in the formula of the cubic, we only going back only one column using the indexes -1 to 2.
+
+    if (floor(newX) - 1  < 0 || floor(newX) + 2  > src.cols - 1 || floor(newY) < 0 || floor(newY)  > src.rows - 1) {
+        if (dst.channels() > 1)
+            dst.at<cv::Vec3b>(dstPixel) = cv::Vec3b(0, 0,0);
+        else
+            dst.at<uchar>(dstPixel) = 0;
+    }
+    else {
+        for (int cNeighbor = -1; cNeighbor <= 2; cNeighbor++) {
+            for (int rNeighbor = -1; rNeighbor <= 2; rNeighbor++) {
+                uX = cubicEquationSolver(rNeighbor + dx, -0.5);
+                uY = cubicEquationSolver(cNeighbor + dy, -0.5);
+                if (src.channels() > 1) {
+                    sumCubicBValue = sumCubicBValue + (double) src.at<cv::Vec3b>(
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[0] * uX * uY;
+                    sumCubicGValue = sumCubicGValue + (double) src.at<cv::Vec3b>(
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[1] * uX * uY;
+                    sumCubicRValue = sumCubicRValue + (double) src.at<cv::Vec3b>(
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[2] * uX * uY;
+                } else {
+                    sumCubicGrayValue = sumCubicGrayValue + (double) src.at<uchar>(
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY))) * uX * uY;
+                }
+            }
+        }
+
+        if (dst.channels() > 1)
+            dst.at<cv::Vec3b>(dstPixel) = cv::Vec3b((int) min(floor(sumCubicBValue),255.0), (int) min(floor(sumCubicGValue),255.0),
+                                                    (int) min(floor(sumCubicRValue),255.0));
+        else {
+            if(sumCubicGrayValue>255)
+                sumCubicGrayValue = 255;
+            else if(sumCubicGrayValue < 0)
+                sumCubicGrayValue = 0;
+            dst.at<uchar>(dstPixel) = sumCubicGrayValue;
+        }
+    }
+}
+{% endhighlight %}
+</div>
+<br>
 
 
 
