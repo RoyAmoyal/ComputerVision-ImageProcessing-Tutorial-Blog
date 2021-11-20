@@ -465,7 +465,7 @@ double cubicEquationSolver(double d,double a) {
     else
         return 0.0;
 }
-{% endlight %}
+{% endhighlight %}
 </div><br>
 
 פונקציית האינטרפולציה שלנו:
