@@ -20,7 +20,8 @@ title: "Let's Build Together a Computer Vision Library!"
 ## Affine Transformations
 - [**Rotation** and presentation of the **Aliasing** problem](Rotation.md)
 - [**Aliasing Problem** and the **Interpolation Solution**](interpolation.md)
-
+- Scaling - Soon!
+- Shear - Soon!
 
 
 ## Histogram Equalization
