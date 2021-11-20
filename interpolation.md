@@ -443,8 +443,6 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 </figure>
 
 
-
-
 <br>
 <br>
 <figure>
