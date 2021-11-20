@@ -392,7 +392,8 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
     }
 }
 {% endhighlight %}
-
+</div>
+<br>
 <h3><u><b>אינטרפולציה קובייתית (Bi-Cubic Interpolation)</b></u></h3>
  בניגוד לאינטרפולציות הקודמות, אינטרפולציה קובייתית, היא האינטרפולציה האיכותית ביותר שאפילו מאחורי הקלעים ב 
  Photoshop 
