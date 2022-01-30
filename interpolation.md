@@ -511,7 +511,7 @@ double cubicEquationSolver(double d,double a) {
 פונקציית האינטרפולציה שלנו (כאשר מציבים את הקירוב של המינוס חצי):
 <div dir="ltr">
 {% highlight c++%}
-void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel) {
+void Cubic_Interpolation(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel) {
     double newX = srcPoint.x;
     double newY = srcPoint.y;
     double dx = std::fabs(newX - round(newX));
