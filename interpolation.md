@@ -583,6 +583,7 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
 <br>
 <br>
 <b><u> הסבר קצת לחלק האחרון בקוד: </u></b>
+<br>
 <button id="InterpolationCubButton" class="button" onclick="myFunction()">הראה קוד</button>
 <div dir="ltr" style="display: none" id="InterpolationCub">
 {% highlight c++%}
