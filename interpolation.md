@@ -19,7 +19,7 @@ title: "Let's Build Together a Computer Vision Library!"
 .centerImage2 {
   display: block;
   margin-left: auto;
-  margin-right: 11%;
+  margin-right: auto;
 }
 </style>
 </head>
@@ -446,18 +446,28 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 ">במאמר הבא</a>.
 <br>
 <figure>
-<img src='images/cubicGaussianDraw.png' style="width: 50%; height: auto;"/>
-<img src='images/cubicGaussianFormula.png' style="width: 50%; height: auto;"/>
+<img src='images/cubicGaussianDraw.png' style="width: 50%; height: auto;" class="centerImage"/>
 </figure>
 
 
 <br>
+<b><u>הנוסחה:</u></b>
+<figure>
+<img src='images/CubicInterpolationFormula.png' style="width: 50%; height: auto;" class="centerImage"/>
+</figure>
 <br>
+ קירוב טוב לנוסחה ללא צורך בפתירת מערכת המשוואות הוא הצבה של
+a = 0.5 
+.
+<br>
+<b><u>כלומר נקבל:</u></b>
+<img src='images/CubicInterpolationFormula2.png' style="width: 50%; height: auto;" class="centerImage"/>
+
 <figure>
 <img src='images/cubicgaussian.png' style="width: 60%; height: auto;" class="centerImage2"/>
 </figure>
 <br>
-הנוסחה הישירה:
+הנוסחה הישירה בקוד:
 <div dir="ltr">
 {% highlight c++%}
 double cubicEquationSolver(double d,double a) {
@@ -476,7 +486,7 @@ double cubicEquationSolver(double d,double a) {
 {% endhighlight %}
 </div><br>
 
-פונקציית האינטרפולציה שלנו:
+פונקציית האינטרפולציה שלנו (כאשר מציבים את הקירוב של המינוס חצי):
 <div dir="ltr">
 {% highlight c++%}
 void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Point2d& srcPoint, const cv::Point2i& dstPixel) {
