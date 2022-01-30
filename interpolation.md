@@ -570,7 +570,8 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
 <br>
 <br>
 <b><u> הסבר קצת לחלק האחרון בקוד: </u></b>
-<div dir="ltr">
+<button id="InterpolationCubButton" class="button" onclick="myFunction()">הראה קוד</button>
+<div dir="ltr" style="display: none" id="InterpolationCub">
 {% highlight c++%}
  if (originalImage.channels() > 1) {
             if(sumCubicRValue>255)
@@ -601,8 +602,9 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
         }
     }
 {% endhighlight %}
-</div>
-    
+</div><br>
+<div id="space1"><br></div>
+
 <br>
 למעשה מכיוון שאנחנו משתמשים בקירוב ע״י הצבת 
 a = -0.5 
@@ -620,3 +622,22 @@ overflow בפיקסלים.
 
 
 </div>
+
+
+   
+<script>
+function myFunction() {
+  var x = document.getElementById("InterpolationCub");
+  var space = document.getElementById("space1");
+  var button = document.getElementById("InterpolationCubButton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    button.textContent = "הסתר קוד";
+    space.style.display = "none";
+  } else {
+    x.style.display = "none";
+    button.textContent = "הראה קוד";
+    space.style.display = "block";
+  }
+}
+</script>
