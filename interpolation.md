@@ -460,7 +460,7 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 a = 0.5 
 .
 <br>
-<b><u>כלומר נקבל:</u></b>
+<b><u>כלומר נקבל ב-Ca:</u></b>
 <img src='images/CubicInterpolationFormula2.png' style="width: 80%; height: auto;" class="centerImage"/>
 
 <figure>
