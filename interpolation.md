@@ -521,8 +521,8 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
     double sumCubicGValue = 0;
     double sumCubicRValue = 0;
     double sumCubicGrayValue = 0;
-    double uX;
-    double uY;
+    double CaX;
+    double CaY;
 
     // if we are on the left quartets of the pixel, we want to move to the left pixel for taking the 16 neighbors, 2 columns before the original "round(newX)".
     // that because in the formula of the cubic, we only going back only one column using the indexes -1 to 2.
@@ -536,18 +536,18 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
     else {
         for (int cNeighbor = -1; cNeighbor <= 2; cNeighbor++) {
             for (int rNeighbor = -1; rNeighbor <= 2; rNeighbor++) {
-                uX = cubicEquationSolver(rNeighbor + dx, -0.5);
-                uY = cubicEquationSolver(cNeighbor + dy, -0.5);
+                CaX = cubicEquationSolver(rNeighbor + dx, -0.5);
+                CaY = cubicEquationSolver(cNeighbor + dy, -0.5);
                 if (src.channels() > 1) {
                     sumCubicBValue = sumCubicBValue + (double) src.at<cv::Vec3b>(
-                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[0] * uX * uY;
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[0] * CaX * CaY;
                     sumCubicGValue = sumCubicGValue + (double) src.at<cv::Vec3b>(
-                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[1] * uX * uY;
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[1] * CaX * CaY;
                     sumCubicRValue = sumCubicRValue + (double) src.at<cv::Vec3b>(
-                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[2] * uX * uY;
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY)))[2] * CaX * CaY;
                 } else {
                     sumCubicGrayValue = sumCubicGrayValue + (double) src.at<uchar>(
-                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY))) * uX * uY;
+                            cv::Point2i(round(newX) + rNeighbor, cNeighbor + round(newY))) * CaX * CaY;
                 }
             }
         }
