@@ -616,10 +616,8 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
         }
     }
 {% endhighlight %}
-</div><br>
+</div>ß
 <div id="space1"><br></div>
-
-<br>
 למעשה מכיוון שאנחנו משתמשים בקירוב ע״י הצבת 
 a = -0.5 
 אנו עלולים לקבל ערכי 
