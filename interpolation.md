@@ -453,7 +453,7 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 <br>
 <b><u>הנוסחה:</u></b>
 <figure>
-<img src='images/CubicInterpolationFormula.png' style="width: 50%; height: auto;" class="centerImage"/>
+<img src='images/CubicInterpolationFormula.png' style="width: 80%; height: auto;" class="centerImage"/>
 </figure>
 <br>
  קירוב טוב לנוסחה ללא צורך בפתירת מערכת המשוואות הוא הצבה של
@@ -461,10 +461,10 @@ a = 0.5
 .
 <br>
 <b><u>כלומר נקבל:</u></b>
-<img src='images/CubicInterpolationFormula2.png' style="width: 50%; height: auto;" class="centerImage"/>
+<img src='images/CubicInterpolationFormula2.png' style="width: 80%; height: auto;" class="centerImage"/>
 
 <figure>
-<img src='images/cubicgaussian.png' style="width: 60%; height: auto;" class="centerImage2"/>
+<img src='images/cubicgaussian.png' style="width: 40%; height: auto;" class="centerImage2"/>
 </figure>
 <br>
 הנוסחה הישירה בקוד:
