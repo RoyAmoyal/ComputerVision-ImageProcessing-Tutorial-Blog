@@ -569,7 +569,7 @@ void Cubic_Interpolation_Helper(const cv::Mat& src, cv::Mat& dst, const cv::Poin
 </div>
 <br>
 <br>
-<b> :הסבר קצת לחלק האחרון בקוד </b>
+<b><u> הסבר קצת לחלק האחרון בקוד: </u></b>
 <br>
 למעשה מכיוון שאנחנו משתמשים בקירוב ע״י הצבת 
 a = -0.5 
