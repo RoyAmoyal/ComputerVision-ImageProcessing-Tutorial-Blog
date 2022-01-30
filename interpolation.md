@@ -19,7 +19,7 @@ title: "Let's Build Together a Computer Vision Library!"
 .centerImage2 {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 11%;
 }
 </style>
 </head>
@@ -395,7 +395,6 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 </div>
 <br>
 
-<h1 align="center"> חלק זה עדיין בפיתוח ובעריכה!!!!!!!! </h1>
 <h3><u><b>אינטרפולציה קובייתית (Bi-Cubic Interpolation)</b></u></h3>
 בניגוד לאינטרפולציות הקודמות, אינטרפולציה קובייתית, היא האינטרפולציה האיכותית ביותר שאפילו לדברי המומחים, משתמשים בה כמעט תמיד ב
 -Photoshop
@@ -435,9 +434,17 @@ void Linear_Interpolation_3Channels(const cv::Mat& src, cv::Mat& dst, const cv::
 ולפי ציר 
 ה-y.
 <br>
-את היחס שניתן לכל שכן, נקבע ע״פ התפלגות גאוסיינית (התפלגות נורמלית)
-הנלמדת בקורס ההסתברות.
+לאחר שחקרתי רבות וניסיתי להבין את פיתוח הנוסחה, מצאתי את המאמר שפרסם את הנוסחה ב-1984. השיטה כל כך טובה אפילו שהמצלמה הדיגטלית התפתחה רבות מאז.
+<a href="http://www.ncorr.com/download/publications/keysbicubic.pdf">למאמר</a>
 
+
+<br>
+למעשה האינטרפולציה הזאת מתנהגת מאוד דומה להתפלגות גאוסיינית ולכן יורשת את רוב התכונות שלה. היא יעילה, חכמה ונותנת תוצאות מעולות. 
+להרחבה על הקשר בין האינטרפולציה להתפלגות גאוסיינית אתם מוזמנים לקרוא 
+.במאמר הבא
+<a href="https://www.researchgate.net/publication/3192900_Scale-space_derived_from_B-splines
+">במאמר הבא</a>.
+<br>
 <figure>
 <img src='images/cubicGaussianDraw.png' style="width: 50%; height: auto;"/>
 <img src='images/cubicGaussianFormula.png' style="width: 50%; height: auto;"/>
